@@ -1,0 +1,17 @@
+Reference,Quantity,Description,Part,Status,Qualification
+BT1,1,"3S 2200 mAh RC LiPo, XT60",SLSXT22003120,Candidate,Needs individual-cell monitoring; no built-in BMS assumed
+F1,1,7.5 A fuse + holder,TBD,Provisional,Close to pack; DC breaking rating and time/current curve required
+F2,1,5 A fuse + holder,TBD,Provisional,Motor buck input; verify inrush and stall coordination
+F3,1,3 A fuse + holder,TBD,Provisional,Logic buck input
+F4,1,3.15 A fuse + holder,TBD,Provisional,Pi cable branch; verify time/current curve
+"S1,S2",2,"DC disconnect, >=10 A at >=12.6 V DC",TBD,Provisional,"Ratings must explicitly cover DC, including inductive service where applicable"
+U1,1,6 V step-down module,Pololu D36V50F6 #4092,Selected for bench,Continuous output depends on installation temperature
+U2,1,5 V step-down module,Pololu D24V50F5 #2851,Conditional,+/-4% output; must pass Pi voltage acceptance test
+D1,1,"Schottky >=10 A, >=40 V",TBD,Provisional,Forward loss and cooling to verify; no footprint selected
+U3,1,Dual 3 A brushed DC driver,Cytron MDD3A,Selected for bench,Four A/B control inputs; 5VO unused
+U4,1,Adjustable LV shunt clamp,Pololu #3778,Candidate only,Pulse-only; not accepted until braking-energy measurements pass
+C2,1,"4700 uF electrolytic, >=16 V",TBD,Provisional,"Ripple current, ESR and inrush to verify"
+C3,1,"100 nF ceramic, >=25 V",TBD,Provisional,Local driver supply bypass; grouped with C2 in drawing
+J2,1,"Short USB-A socket pigtail + A-to-C power cable, >=3 A",TBD,Provisional,Only 5 V/GND wired at pigtail; no bare USB-C connector implementation
+MON1,1,3S individual-cell monitor / alarm,TBD,Required for battery tests,Not a hardware cutoff or BMS; supervised prototype only
+WIRE,1 set,1.5 mm2 main; 0.75 mm2 motor; 1.0 mm2 short 5 V feed,TBD,Starting sizes,Flexible insulated copper; fuse and length coordination required

@@ -41,6 +41,8 @@ by changing `upload_speed` in `platformio.ini`.
 
 The firmware continues with serial diagnostics if no OLED or IMU is detected.
 `lilygo_t3_serial` builds the same sensing application without OLED initialization.
+**No IMU wired yet?** Select **`lilygo_t3_display`** to upload a display/serial
+check immediately, without probing the IMU. Return to `lilygo_t3` once wired.
 
 ## First chassis experiment
 

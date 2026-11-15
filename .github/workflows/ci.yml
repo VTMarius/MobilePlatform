@@ -1,0 +1,16 @@
+name: Build and host checks
+on: [push, pull_request]
+
+jobs:
+  firmware:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements-dev.txt
+      - run: pio run -e lilygo_t3 -e lilygo_t3_serial -e lilygo_t3_display
+      - run: python -m unittest discover -s tests -p 'test_*.py' -v
+      - run: g++ -std=c++11 -Wall -Wextra -Werror -Iinclude tests/test_orientation.cpp -o /tmp/test_orientation
+      - run: /tmp/test_orientation

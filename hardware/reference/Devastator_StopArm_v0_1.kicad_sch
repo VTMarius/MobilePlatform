@@ -1,0 +1,1473 @@
+(kicad_sch (version 20250114) (generator "eeschema") (generator_version "9.0") (uuid "14f4ee1b-e37a-4eab-b453-f53c052d8f48") (paper "A3") (title_block (title "Devastator - stop/arm logic") (date "2026-11-14") (rev "0.1 DRAFT") (comment 1 "Generated from the schematic-entry tables; logical contracts, not released for layout") (comment 2 "Timing acceptance open: arm edges near RUN_OK recovery"))
+(lib_symbols (symbol "Connector:TestPoint"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.762)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "TP"
+			(at 0 6.858 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 5.08 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 5.08 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "test point tp"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Pin* Test*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "TestPoint_0_1"
+			(circle
+				(center 0 3.302)
+				(radius 0.762)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "TestPoint_1_1"
+			(pin passive line
+				(at 0 0 90)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	) (symbol "Connector_Generic:Conn_01x02"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J"
+			(at 0 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "connector"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Conn_01x02_1_1"
+			(rectangle
+				(start -1.27 1.27)
+				(end 1.27 -3.81)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -1.27 0.127)
+				(end 0 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -2.413)
+				(end 0 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 3.81)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -2.54 0)
+				(length 3.81)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	) (symbol "Connector_Generic:Conn_01x05"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J"
+			(at 0 7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x05"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "connector"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Conn_01x05_1_1"
+			(rectangle
+				(start -1.27 6.35)
+				(end 1.27 -6.35)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -1.27 5.207)
+				(end 0 4.953)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 2.667)
+				(end 0 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 0.127)
+				(end 0 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -2.413)
+				(end 0 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -4.953)
+				(end 0 -5.207)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 5.08 0)
+				(length 3.81)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 2.54 0)
+				(length 3.81)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 3.81)
+				(name "Pin_3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -2.54 0)
+				(length 3.81)
+				(name "Pin_4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -5.08 0)
+				(length 3.81)
+				(name "Pin_5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	) (symbol "Device:C"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.254)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0.635 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C"
+			(at 0.635 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 0.9652 -3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "cap capacitor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "C_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "C_0_1"
+			(polyline
+				(pts
+					(xy -2.032 0.762) (xy 2.032 0.762)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.032 -0.762) (xy 2.032 -0.762)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "C_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 2.794)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 2.794)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	) (symbol "Device:D_TVS"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at 0 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D_TVS"
+			(at 0 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bidirectional transient-voltage-suppression diode"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "diode TVS thyrector"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "D_TVS_0_1"
+			(polyline
+				(pts
+					(xy -2.54 1.27) (xy -2.54 -1.27) (xy 2.54 1.27) (xy 2.54 -1.27) (xy -2.54 1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.508 1.27) (xy 0 1.27) (xy 0 -1.27) (xy -0.508 -1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 0) (xy -1.27 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "D_TVS_1_1"
+			(pin passive line
+				(at -3.81 0 0)
+				(length 2.54)
+				(name "A1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 3.81 0 180)
+				(length 2.54)
+				(name "A2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	) (symbol "Device:R"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at 2.032 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 0 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at -1.778 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "R res resistor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "R_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "R_0_1"
+			(rectangle
+				(start -1.016 -2.54)
+				(end 1.016 2.54)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "R_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 1.27)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	) (symbol "devastator:74LVC08A" (pin_names (offset 1.016)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "U" (at 3.81 13.97 0) (effects (font (size 1.27 1.27)))) (property "Value" "74LVC08A" (at 3.81 -13.97 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "Quad 2-input AND, IOFF (Diodes)" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (symbol "74LVC08A_0_1" (rectangle (start -7.62 12.7) (end 7.62 -12.7) (stroke (width 0.254) (type default)) (fill (type background)))) (symbol "74LVC08A_1_1" (pin input line (at -10.16 10.16 0) (length 2.54) (name "1A" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 7.62 0) (length 2.54) (name "1B" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 5.08 0) (length 2.54) (name "2A" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 2.54 0) (length 2.54) (name "2B" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 0 0) (length 2.54) (name "3A" (effects (font (size 1.27 1.27)))) (number "9" (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 -2.54 0) (length 2.54) (name "3B" (effects (font (size 1.27 1.27)))) (number "10" (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 -5.08 0) (length 2.54) (name "4A" (effects (font (size 1.27 1.27)))) (number "12" (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 -7.62 0) (length 2.54) (name "4B" (effects (font (size 1.27 1.27)))) (number "13" (effects (font (size 1.27 1.27))))) (pin output line (at 10.16 10.16 180) (length 2.54) (name "1Y" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27))))) (pin output line (at 10.16 5.08 180) (length 2.54) (name "2Y" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27))))) (pin output line (at 10.16 0 180) (length 2.54) (name "3Y" (effects (font (size 1.27 1.27)))) (number "8" (effects (font (size 1.27 1.27))))) (pin output line (at 10.16 -5.08 180) (length 2.54) (name "4Y" (effects (font (size 1.27 1.27)))) (number "11" (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 15.24 270) (length 2.54) (name "VCC" (effects (font (size 1.27 1.27)))) (number "14" (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 -15.24 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "7" (effects (font (size 1.27 1.27)))))) (embedded_fonts no)) (symbol "devastator:SN74LV21A" (pin_names (offset 1.016)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "U" (at 3.81 19.05 0) (effects (font (size 1.27 1.27)))) (property "Value" "SN74LV21A" (at 3.81 -19.05 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "Dual 4-input AND, IOFF" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (symbol "SN74LV21A_0_1" (rectangle (start -7.62 17.78) (end 7.62 -17.78) (stroke (width 0.254) (type default)) (fill (type background)))) (symbol "SN74LV21A_1_1" (pin input line (at -10.16 15.24 0) (length 2.54) (name "1A" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 12.7 0) (length 2.54) (name "1B" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 10.16 0) (length 2.54) (name "1C" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 7.62 0) (length 2.54) (name "1D" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 2.54 0) (length 2.54) (name "2A" (effects (font (size 1.27 1.27)))) (number "9" (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 0 0) (length 2.54) (name "2B" (effects (font (size 1.27 1.27)))) (number "10" (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 -7.62 0) (length 2.54) (name "2C" (effects (font (size 1.27 1.27)))) (number "12" (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 -10.16 0) (length 2.54) (name "2D" (effects (font (size 1.27 1.27)))) (number "13" (effects (font (size 1.27 1.27))))) (pin output line (at 10.16 12.7 180) (length 2.54) (name "1Y" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27))))) (pin output line (at 10.16 2.54 180) (length 2.54) (name "2Y" (effects (font (size 1.27 1.27)))) (number "8" (effects (font (size 1.27 1.27))))) (pin no_connect line (at 10.16 -7.62 180) (length 2.54) (name "NC" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27))))) (pin no_connect line (at 10.16 -10.16 180) (length 2.54) (name "NC" (effects (font (size 1.27 1.27)))) (number "11" (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 20.32 270) (length 2.54) (name "VCC" (effects (font (size 1.27 1.27)))) (number "14" (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 -20.32 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "7" (effects (font (size 1.27 1.27)))))) (embedded_fonts no)) (symbol "devastator:SN74LVC1G02" (pin_names (offset 1.016)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "U" (at 3.81 11.43 0) (effects (font (size 1.27 1.27)))) (property "Value" "SN74LVC1G02" (at 3.81 -11.43 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "2-input NOR" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (symbol "SN74LVC1G02_0_1" (rectangle (start -7.62 10.16) (end 7.62 -10.16) (stroke (width 0.254) (type default)) (fill (type background)))) (symbol "SN74LVC1G02_1_1" (pin input line (at -10.16 7.62 0) (length 2.54) (name "A" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 5.08 0) (length 2.54) (name "B" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))) (pin output line (at 10.16 7.62 180) (length 2.54) (name "Y" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 12.7 270) (length 2.54) (name "VCC" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 -12.7 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))) (embedded_fonts no)) (symbol "devastator:SN74LVC1G04" (pin_names (offset 1.016)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "U" (at 3.81 11.43 0) (effects (font (size 1.27 1.27)))) (property "Value" "SN74LVC1G04" (at 3.81 -11.43 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "Inverter" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (symbol "SN74LVC1G04_0_1" (rectangle (start -7.62 10.16) (end 7.62 -10.16) (stroke (width 0.254) (type default)) (fill (type background)))) (symbol "SN74LVC1G04_1_1" (pin input line (at -10.16 7.62 0) (length 2.54) (name "A" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))) (pin output line (at 10.16 7.62 180) (length 2.54) (name "Y" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27))))) (pin no_connect line (at 10.16 2.54 180) (length 2.54) (name "NC" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 12.7 270) (length 2.54) (name "VCC" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 -12.7 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))) (embedded_fonts no)) (symbol "devastator:SN74LVC1G08" (pin_names (offset 1.016)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "U" (at 3.81 11.43 0) (effects (font (size 1.27 1.27)))) (property "Value" "SN74LVC1G08" (at 3.81 -11.43 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "2-input AND" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (symbol "SN74LVC1G08_0_1" (rectangle (start -7.62 10.16) (end 7.62 -10.16) (stroke (width 0.254) (type default)) (fill (type background)))) (symbol "SN74LVC1G08_1_1" (pin input line (at -10.16 7.62 0) (length 2.54) (name "A" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 5.08 0) (length 2.54) (name "B" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))) (pin output line (at 10.16 7.62 180) (length 2.54) (name "Y" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 12.7 270) (length 2.54) (name "VCC" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 -12.7 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))) (embedded_fonts no)) (symbol "devastator:SN74LVC1G123" (pin_names (offset 1.016)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "U" (at 3.81 11.43 0) (effects (font (size 1.27 1.27)))) (property "Value" "SN74LVC1G123" (at 3.81 -11.43 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "Retriggerable monostable" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (symbol "SN74LVC1G123_0_1" (rectangle (start -7.62 10.16) (end 7.62 -10.16) (stroke (width 0.254) (type default)) (fill (type background)))) (symbol "SN74LVC1G123_1_1" (pin input line (at -10.16 7.62 0) (length 2.54) (name "B" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 0 0) (length 2.54) (name "~{CLR}" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 -5.08 0) (length 2.54) (name "~{A}" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin output line (at 10.16 7.62 180) (length 2.54) (name "Q" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27))))) (pin passive line (at 10.16 2.54 180) (length 2.54) (name "Rext/Cext" (effects (font (size 1.27 1.27)))) (number "7" (effects (font (size 1.27 1.27))))) (pin passive line (at 10.16 0 180) (length 2.54) (name "Cext" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 12.7 270) (length 2.54) (name "VCC" (effects (font (size 1.27 1.27)))) (number "8" (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 -12.7 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))) (embedded_fonts no)) (symbol "devastator:SN74LVC1G123B" (pin_names (offset 1.016)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "U" (at 3.81 11.43 0) (effects (font (size 1.27 1.27)))) (property "Value" "SN74LVC1G123B" (at 3.81 -11.43 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "Retriggerable monostable" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (symbol "SN74LVC1G123B_0_1" (rectangle (start -7.62 10.16) (end 7.62 -10.16) (stroke (width 0.254) (type default)) (fill (type background)))) (symbol "SN74LVC1G123B_1_1" (pin input line (at -10.16 7.62 0) (length 2.54) (name "~{A}" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 5.08 0) (length 2.54) (name "~{CLR}" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 -2.54 0) (length 2.54) (name "B" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))) (pin output line (at 10.16 7.62 180) (length 2.54) (name "Q" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27))))) (pin passive line (at 10.16 2.54 180) (length 2.54) (name "Rext/Cext" (effects (font (size 1.27 1.27)))) (number "7" (effects (font (size 1.27 1.27))))) (pin passive line (at 10.16 0 180) (length 2.54) (name "Cext" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 12.7 270) (length 2.54) (name "VCC" (effects (font (size 1.27 1.27)))) (number "8" (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 -12.7 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))) (embedded_fonts no)) (symbol "devastator:SN74LVC1G3208" (pin_names (offset 1.016)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "U" (at 3.81 11.43 0) (effects (font (size 1.27 1.27)))) (property "Value" "SN74LVC1G3208" (at 3.81 -11.43 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "3-input OR-AND, Y=(A+B)C" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (symbol "SN74LVC1G3208_0_1" (rectangle (start -7.62 10.16) (end 7.62 -10.16) (stroke (width 0.254) (type default)) (fill (type background)))) (symbol "SN74LVC1G3208_1_1" (pin input line (at -10.16 7.62 0) (length 2.54) (name "A" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 5.08 0) (length 2.54) (name "B" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 2.54 0) (length 2.54) (name "C" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27))))) (pin output line (at 10.16 5.08 180) (length 2.54) (name "Y" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 12.7 270) (length 2.54) (name "VCC" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 -12.7 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))) (embedded_fonts no)) (symbol "devastator:SN74LVC1G74" (pin_names (offset 1.016)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "U" (at 3.81 11.43 0) (effects (font (size 1.27 1.27)))) (property "Value" "SN74LVC1G74" (at 3.81 -11.43 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "D flip-flop with preset and clear" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (symbol "SN74LVC1G74_0_1" (rectangle (start -7.62 10.16) (end 7.62 -10.16) (stroke (width 0.254) (type default)) (fill (type background)))) (symbol "SN74LVC1G74_1_1" (pin input line (at -10.16 7.62 0) (length 2.54) (name "D" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 5.08 0) (length 2.54) (name "CLK" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 2.54 0) (length 2.54) (name "~{CLR}" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 -5.08 0) (length 2.54) (name "~{PRE}" (effects (font (size 1.27 1.27)))) (number "7" (effects (font (size 1.27 1.27))))) (pin output line (at 10.16 7.62 180) (length 2.54) (name "Q" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27))))) (pin output line (at 10.16 -5.08 180) (length 2.54) (name "~{Q}" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 12.7 270) (length 2.54) (name "VCC" (effects (font (size 1.27 1.27)))) (number "8" (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 -12.7 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))) (embedded_fonts no)) (symbol "devastator:SN74LVC2G17" (pin_names (offset 1.016)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "U" (at 3.81 11.43 0) (effects (font (size 1.27 1.27)))) (property "Value" "SN74LVC2G17" (at 3.81 -11.43 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "Dual Schmitt buffer" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (symbol "SN74LVC2G17_0_1" (rectangle (start -7.62 10.16) (end 7.62 -10.16) (stroke (width 0.254) (type default)) (fill (type background)))) (symbol "SN74LVC2G17_1_1" (pin input line (at -10.16 7.62 0) (length 2.54) (name "1A" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 2.54 0) (length 2.54) (name "2A" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27))))) (pin output line (at 10.16 7.62 180) (length 2.54) (name "1Y" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27))))) (pin output line (at 10.16 2.54 180) (length 2.54) (name "2Y" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 12.7 270) (length 2.54) (name "VCC" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 -12.7 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))) (embedded_fonts no)) (symbol "devastator:SN74LVC32A" (pin_names (offset 1.016)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "U" (at 3.81 16.51 0) (effects (font (size 1.27 1.27)))) (property "Value" "SN74LVC32A" (at 3.81 -16.51 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "Quad 2-input OR" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (symbol "SN74LVC32A_0_1" (rectangle (start -7.62 15.24) (end 7.62 -15.24) (stroke (width 0.254) (type default)) (fill (type background)))) (symbol "SN74LVC32A_1_1" (pin input line (at -10.16 12.7 0) (length 2.54) (name "1A" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 10.16 0) (length 2.54) (name "1B" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 7.62 0) (length 2.54) (name "2A" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 5.08 0) (length 2.54) (name "2B" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 2.54 0) (length 2.54) (name "3A" (effects (font (size 1.27 1.27)))) (number "9" (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 0 0) (length 2.54) (name "3B" (effects (font (size 1.27 1.27)))) (number "10" (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 -5.08 0) (length 2.54) (name "4A" (effects (font (size 1.27 1.27)))) (number "12" (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 -7.62 0) (length 2.54) (name "4B" (effects (font (size 1.27 1.27)))) (number "13" (effects (font (size 1.27 1.27))))) (pin output line (at 10.16 12.7 180) (length 2.54) (name "1Y" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27))))) (pin output line (at 10.16 7.62 180) (length 2.54) (name "2Y" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27))))) (pin output line (at 10.16 2.54 180) (length 2.54) (name "3Y" (effects (font (size 1.27 1.27)))) (number "8" (effects (font (size 1.27 1.27))))) (pin output line (at 10.16 -5.08 180) (length 2.54) (name "4Y" (effects (font (size 1.27 1.27)))) (number "11" (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 17.78 270) (length 2.54) (name "VCC" (effects (font (size 1.27 1.27)))) (number "14" (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 -17.78 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "7" (effects (font (size 1.27 1.27)))))) (embedded_fonts no)) (symbol "devastator:TPS3839K33" (pin_names (offset 1.016)) (exclude_from_sim no) (in_bom yes) (on_board yes) (property "Reference" "U" (at 3.81 11.43 0) (effects (font (size 1.27 1.27)))) (property "Value" "TPS3839K33" (at 3.81 -11.43 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "Supervisor 2.93 V, push-pull active-low" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes))) (symbol "TPS3839K33_0_1" (rectangle (start -7.62 10.16) (end 7.62 -10.16) (stroke (width 0.254) (type default)) (fill (type background)))) (symbol "TPS3839K33_1_1" (pin output line (at 10.16 7.62 180) (length 2.54) (name "~{RESET}" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 12.7 270) (length 2.54) (name "VDD" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 -12.7 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))) (embedded_fonts no)) (symbol "power:+3V3"
+		(power)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "#PWR"
+			(at 0 -3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 0 3.556 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "global power"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "+3V3_0_1"
+			(polyline
+				(pts
+					(xy -0.762 1.27) (xy 0 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 2.54) (xy 0.762 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "+3V3_1_1"
+			(pin power_in line
+				(at 0 0 90)
+				(length 0)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	) (symbol "power:GND"
+		(power)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "#PWR"
+			(at 0 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 0 -3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "global power"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "GND_0_1"
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "GND_1_1"
+			(pin power_in line
+				(at 0 0 270)
+				(length 0)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	) (symbol "power:PWR_FLAG"
+		(power)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "#FLG"
+			(at 0 1.905 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 0 3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "flag power"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "PWR_FLAG_0_0"
+			(pin power_out line
+				(at 0 0 90)
+				(length 0)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "PWR_FLAG_0_1"
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(embedded_fonts no)
+	))
+(global_label "CMD_M1A" (shape bidirectional) (at 50.8 50.8 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right)) (uuid "d3cb34a4-7111-44f2-9d5b-79cf935ac32e") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 50.8 50.8 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(label "EN" (at 50.8 53.34 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "6194a2db-d3d1-48e5-9cfe-f5684613c0aa"))
+(global_label "CMD_M1B" (shape bidirectional) (at 50.8 55.88 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right)) (uuid "808eda2d-ba91-4bcf-9386-e7a259e5ab8c") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 50.8 55.88 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(label "EN" (at 50.8 58.42 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "65bc6d33-66be-4b6c-a433-6283805f91db"))
+(global_label "CMD_M2A" (shape bidirectional) (at 50.8 60.96 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right)) (uuid "2e64ed25-979f-468a-965c-19a6aa659702") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 50.8 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(label "EN" (at 50.8 63.5 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "eddb484a-51e2-43e4-9689-6868936b46f5"))
+(global_label "CMD_M2B" (shape bidirectional) (at 50.8 66.04 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right)) (uuid "2aa0961a-122e-476b-b170-abc28f7ade27") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 50.8 66.04 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(label "EN" (at 50.8 68.58 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "54bae301-ec47-4a5f-a2e2-b0304ae6f887"))
+(label "DRV_M1A" (at 71.12 50.8 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "81fd80cd-56cc-4493-b9c9-d16b4ceece9f"))
+(label "DRV_M1B" (at 71.12 55.88 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "5eede942-59ef-40c2-b840-fef84f782aa7"))
+(label "DRV_M2A" (at 71.12 60.96 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "16b321df-a346-414f-89c9-284a5355bec1"))
+(label "DRV_M2B" (at 71.12 66.04 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "1668503c-17dd-4794-b5f0-c2c07447f250"))
+(label "POR_n" (at 50.8 109.22 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "cc1bbf68-dede-49aa-9f27-ac00604053c1"))
+(global_label "STOP_OK" (shape bidirectional) (at 50.8 111.76 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right)) (uuid "4025dc31-4e33-401c-a279-65d7f732c302") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 50.8 111.76 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(label "HB_OK" (at 50.8 114.3 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "4f99cd3a-395a-4331-996d-fa9210f3fa57"))
+(global_label "READY" (shape bidirectional) (at 50.8 116.84 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right)) (uuid "623ddfc1-02c4-48e3-ac78-7c375dd49c2f") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 50.8 116.84 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(global_label "ARMED" (shape bidirectional) (at 50.8 121.92 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right)) (uuid "0d75efca-fa33-4c3a-a45e-4aad33e9b9b5") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 50.8 121.92 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(label "RUN_OK" (at 50.8 124.46 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "f13f7ad1-d6b9-4b49-bfb8-996ac77d22c4"))
+(label "RUN_OK" (at 71.12 111.76 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "5c94f88f-2047-4e24-b6d0-86531567d603"))
+(label "EN" (at 71.12 121.92 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "3cf25cdf-b4e7-492a-b139-0cb4b96225ee"))
+(wire (pts (xy 50.8 132.08) (xy 45.72 132.08)) (stroke (width 0) (type default)) (uuid "c2915b82-6fc1-44a2-8a79-dc66641d9553"))
+(wire (pts (xy 50.8 134.62) (xy 45.72 134.62)) (stroke (width 0) (type default)) (uuid "57af770a-27e1-46d7-8c27-c27c4fac6a1f"))
+(wire (pts (xy 45.72 132.08) (xy 45.72 134.62)) (stroke (width 0) (type default)) (uuid "acb57f40-409a-4936-b5f0-d42b5b6b4d3e"))
+(label "RELEASED" (at 50.8 177.8 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "cbaf83a1-b33e-4ba5-b3c2-4edac469320d"))
+(label "REL_SEEN" (at 50.8 180.34 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "987de1c3-6a22-4f7a-b084-d674efcc5f5c"))
+(label "RUN_OK" (at 50.8 182.88 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "524a876c-ad4d-4949-9375-5a746a665c84"))
+(label "REL_SEEN" (at 71.12 180.34 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "6ea0d9ca-da2a-46d0-9dfd-3b456e9bb9be"))
+(label "ARM_PERMIT" (at 50.8 228.6 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "d08d71fb-49e3-4245-a755-248b8e7b0564"))
+(label "ARM_EDGE" (at 50.8 231.14 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "455444f8-72a3-469b-b464-95fc2faa7434"))
+(label "RUN_OK" (at 50.8 233.68 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "92c234b1-f939-4c24-a335-8b02764b7a72"))
+(global_label "ARMED" (shape bidirectional) (at 71.12 228.6 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left)) (uuid "2a95749f-dc0a-4373-b332-09464d872a43") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 71.12 228.6 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(no_connect (at 71.12 241.3) (uuid "e7cbd07f-668b-49bf-86ae-39f2b3ea4beb"))
+(wire (pts (xy 50.8 241.3) (xy 45.72 241.3)) (stroke (width 0) (type default)) (uuid "61300981-ca15-4eaa-9895-e59df070b98d"))
+(global_label "CMD_M1A" (shape bidirectional) (at 139.7 48.26 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right)) (uuid "2c6b64b1-f1cf-4c77-8a7b-2b132923827d") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 139.7 48.26 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(global_label "CMD_M1B" (shape bidirectional) (at 139.7 50.8 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right)) (uuid "0846d4af-ee80-421a-9a46-b0d952d9afcb") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 139.7 50.8 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(global_label "CMD_M2A" (shape bidirectional) (at 139.7 53.34 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right)) (uuid "fe51da51-f3ed-436d-8919-c04cc6d5d526") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 139.7 53.34 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(global_label "CMD_M2B" (shape bidirectional) (at 139.7 55.88 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right)) (uuid "fb7901c6-8ad1-40a2-986e-d54f9e41b829") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 139.7 55.88 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(label "OR12" (at 139.7 58.42 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "fda5899c-e72e-4463-8db5-97025e8bea75"))
+(label "OR34" (at 139.7 60.96 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "b7cff293-1bc8-419e-8cec-2e9457c68896"))
+(label "OR12" (at 160.02 48.26 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "e9e716d3-9399-4faf-b166-b4b5620c5ff2"))
+(label "OR34" (at 160.02 53.34 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "3a471b57-5f31-44d3-ab13-f13bcda8b851"))
+(label "CMD_ANY" (at 160.02 58.42 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "92e8a038-fc4e-4d33-a5c5-d6eeab9a72b8"))
+(no_connect (at 160.02 66.04) (uuid "a1a6f868-8195-4211-a4f0-ceedd4e59ed6"))
+(wire (pts (xy 139.7 66.04) (xy 134.62 66.04)) (stroke (width 0) (type default)) (uuid "2bd56228-08b1-44ea-a76d-1e6a3e6e7921"))
+(wire (pts (xy 139.7 68.58) (xy 134.62 68.58)) (stroke (width 0) (type default)) (uuid "bee2ec6d-e708-4777-b3f5-0c9e7a3d7385"))
+(wire (pts (xy 134.62 66.04) (xy 134.62 68.58)) (stroke (width 0) (type default)) (uuid "2b14f15d-9d71-4486-acc6-5ab843322629"))
+(label "CMD_ANY" (at 139.7 111.76 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "146dd7b2-09e9-4b01-ab36-d72a84f2a742"))
+(label "POR_n" (at 139.7 114.3 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "cd5c20ff-1e97-4163-9a70-604bfcbd15d4"))
+(label "ACT" (at 160.02 111.76 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "1be95c90-9f8f-488c-aa9a-9b541bcd0fd9"))
+(label "U15_RC" (at 160.02 116.84 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "3ebe223b-8d90-4d16-83b9-7388f17f8415"))
+(label "U15_CX" (at 160.02 119.38 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "71ff06f3-5e44-4e82-8293-020c6a061c54"))
+(wire (pts (xy 139.7 121.92) (xy 134.62 121.92)) (stroke (width 0) (type default)) (uuid "295c8809-d8e8-4bc4-af80-bacecf8c01f8"))
+(label "CMD_ANY" (at 139.7 152.4 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "a99c0da0-1370-4fb8-8178-af8134d1325e"))
+(label "ACT" (at 139.7 154.94 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "40df68a8-e79d-4cc4-9be3-67268b1017c4"))
+(label "CMD_IDLE" (at 160.02 152.4 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "23a929e0-b667-4bb7-83fc-3ec56ce2bb63"))
+(label "CMD_IDLE" (at 139.7 193.04 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "09e5129d-84cf-418d-a3d3-96abe0393f24"))
+(label "REL_SEEN" (at 139.7 195.58 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "504deaea-58ea-48a3-b8d2-3f674930e590"))
+(label "ARM_PERMIT" (at 160.02 193.04 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "85276308-460b-4386-b3a5-b25c78a87865"))
+(label "ARM_EDGE" (at 139.7 231.14 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "d4cf4876-69f9-4686-a168-8ddbcd58df44"))
+(label "RELEASED" (at 160.02 231.14 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "159b19b2-3952-407e-a28d-ac92c77178c6"))
+(global_label "HB" (shape bidirectional) (at 228.6 53.34 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right)) (uuid "c74a9967-f111-4d54-b241-7bfca981b2cc") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 228.6 53.34 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(label "HB_OK" (at 248.92 53.34 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "ed63ffc4-e6c0-4c47-a093-b5e7e325226a"))
+(label "U10_RC" (at 248.92 58.42 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "f55d2ff9-8ab1-40dd-87dd-6685f5043760"))
+(label "U10_CX" (at 248.92 60.96 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "7197012a-421f-4c2e-8219-5db8b3cb6214"))
+(wire (pts (xy 228.6 60.96) (xy 223.52 60.96)) (stroke (width 0) (type default)) (uuid "46118331-d147-4e65-b646-194d0581f42b"))
+(wire (pts (xy 228.6 66.04) (xy 223.52 66.04)) (stroke (width 0) (type default)) (uuid "59ed3354-4f1d-4b4c-b682-a24cbfec9eaf"))
+(label "STOP_RAW" (at 228.6 96.52 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "c6d74d01-890f-46ef-9b39-7ed06fbe3e95"))
+(label "ARM_RAW" (at 228.6 101.6 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "7ef884bd-6ce9-48b9-ba88-d13764d48eb1"))
+(global_label "STOP_OK" (shape bidirectional) (at 248.92 96.52 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left)) (uuid "baf94c7e-3f26-44d3-8d80-6fc29a735057") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 248.92 96.52 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(label "ARM_EDGE" (at 248.92 101.6 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "78712966-2cd6-49c2-a9e1-c7b0be804296"))
+(label "POR_n" (at 248.92 139.7 0) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "a95bc15e-0580-44cf-88a0-be92639a1b21"))
+(label "DRV_M1A" (at 215.9 179.07 90) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "9d7fbf9d-8edd-48de-a50b-fa7b5c537d6e"))
+(label "DRV_M1B" (at 231.14 179.07 90) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "2a2cdf68-f67b-41d3-bbe5-bc27064f69df"))
+(label "DRV_M2A" (at 246.38 179.07 90) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "15693778-6483-490b-a314-d328c7741a07"))
+(label "DRV_M2B" (at 261.62 179.07 90) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "7df541e5-2a8b-4552-ba0f-8da6b197a570"))
+(global_label "CMD_M1A" (shape bidirectional) (at 276.86 179.07 90) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left)) (uuid "9f2165fd-f15f-493e-a09d-158bac758bc4") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 276.86 179.07 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(global_label "CMD_M1B" (shape bidirectional) (at 292.1 179.07 90) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left)) (uuid "b8281250-7d81-411b-9a13-e3b88d853915") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 292.1 179.07 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(global_label "CMD_M2A" (shape bidirectional) (at 215.9 207.01 90) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left)) (uuid "6a6e9282-1ac9-47c6-aff0-2ddd82095883") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 215.9 207.01 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(global_label "CMD_M2B" (shape bidirectional) (at 231.14 207.01 90) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left)) (uuid "b8188b4a-3c78-4886-87a8-8d0e47ec6e25") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 231.14 207.01 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(global_label "HB" (shape bidirectional) (at 246.38 207.01 90) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left)) (uuid "439d8831-c26b-4db3-b427-25bf795160e5") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 246.38 207.01 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(global_label "READY" (shape bidirectional) (at 261.62 207.01 90) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left)) (uuid "e473ba67-3854-48b5-9c33-bbcf01e97899") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 261.62 207.01 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(label "U10_RC" (at 276.86 214.63 270) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "ce812073-cb2c-4411-8595-1e9f7270adee"))
+(label "U15_RC" (at 292.1 214.63 270) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "5b91977c-f513-44e9-9e95-135fb0e6518d"))
+(label "U10_RC" (at 215.9 234.95 90) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "bd37e5f4-78b6-443f-8ca8-5d0c5466f49b"))
+(label "U10_CX" (at 215.9 242.57 270) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "aee9e6bc-cee4-48ca-addd-167400948fad"))
+(label "U15_RC" (at 231.14 234.95 90) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "29ce15a1-e4cd-41d9-a05b-053a2f64b690"))
+(label "U15_CX" (at 231.14 242.57 270) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "155c9ad4-493f-499b-9940-8c9cd48d2cca"))
+(label "STOP_FEED" (at 299.72 64.77 270) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "21ef6d0e-ef8a-4214-ab44-054b3e594755"))
+(label "STOP_IN" (at 320.04 57.15 90) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "718c0025-16ba-462c-aac7-2e2243d9def2"))
+(label "STOP_IN" (at 340.36 57.15 90) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "829c3dfb-d831-4cf7-8691-6380388ffc52"))
+(label "STOP_RAW" (at 340.36 64.77 270) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "f674f80b-a1b1-46fc-8017-66acb8af15bf"))
+(label "STOP_RAW" (at 360.68 57.15 90) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "b65a1157-205a-47f4-86a5-4886f8cb715a"))
+(label "STOP_IN" (at 377.19 60.96 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "05b2f370-a33d-4cb8-9a8b-1318d5b1abba"))
+(label "ARM_FEED" (at 299.72 97.79 270) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "a535ffc9-5ed5-4ee0-ab81-b045e91de475"))
+(label "ARM_IN" (at 320.04 90.17 90) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "814203bf-b739-43d3-93b5-80e0c3df6654"))
+(label "ARM_IN" (at 340.36 90.17 90) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "311a2803-ec9e-4151-a5ce-14c6f53ef416"))
+(label "ARM_RAW" (at 340.36 97.79 270) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "dfba4a1a-fff5-4bc5-9c7d-5338ec0bfdb6"))
+(label "ARM_RAW" (at 360.68 90.17 90) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "231725ce-f545-4c7f-89ce-d9b45028720a"))
+(label "ARM_IN" (at 377.19 93.98 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "06a010ae-4d1c-45ff-9795-40db8c2d001c"))
+(label "STOP_FEED" (at 320.04 124.46 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "70d1bd5c-7f7e-41e2-a6cc-3c8a3d840526"))
+(label "STOP_IN" (at 320.04 127 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "9b0cbc7d-6cf9-40c1-8ea4-6a8c70c05114"))
+(label "ARM_FEED" (at 355.6 124.46 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "2243ac7a-13d6-4226-bb62-fc767ec7ebe5"))
+(label "ARM_IN" (at 355.6 127 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "acce0f34-5923-4a0b-af9a-fd17cae526c0"))
+(label "DRV_M1A" (at 391.16 119.38 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "ce91f170-c79f-4fee-8170-e6118d873d14"))
+(label "DRV_M1B" (at 391.16 121.92 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "46e46131-3912-46a8-9635-353083d80d10"))
+(label "DRV_M2A" (at 391.16 124.46 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "0340c316-39e2-4796-b51f-a98c8a09c7c8"))
+(label "DRV_M2B" (at 391.16 127 180) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "ce9069ae-7439-4c71-9212-37759c057c5d"))
+(global_label "READY" (shape bidirectional) (at 299.72 165.1 270) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right)) (uuid "49c3e73e-5741-4e3d-a990-f955d4b415c2") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 299.72 165.1 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(label "RUN_OK" (at 312.42 165.1 270) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "10d4bd64-1728-4d07-97d1-b4f85f9a17a3"))
+(label "REL_SEEN" (at 325.12 165.1 270) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "2cab313b-512b-48d9-b301-e3c5884c7f6a"))
+(label "CMD_IDLE" (at 337.82 165.1 270) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "2580e307-7d7c-422d-a836-bf1a1a6eb05d"))
+(global_label "ARMED" (shape bidirectional) (at 350.52 165.1 270) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right)) (uuid "71bcf4d2-605d-40b7-9528-07d3f1d72a0d") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 350.52 165.1 0) (effects (font (size 1.27 1.27)) (hide yes))))
+(label "EN" (at 363.22 165.1 270) (fields_autoplaced yes) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "6e4a0cf2-9dbd-48e7-9acd-e0bfd470ffa6"))
+(text "Devastator stop/arm logic - schematic entry, rev 3 spec. Pinouts checked against datasheets 14 Nov 2026." (exclude_from_sim no) (at 20.32 269.24 0) (effects (font (size 1.5 1.5)) (justify left)) (uuid "d789d25c-e62c-48bd-9cca-268e8eb95885"))
+(text "RUN_OK = POR_n.STOP_OK.HB_OK.READY   EN = ARMED.RUN_OK   REL_SEEN = (RELEASED+REL_SEEN).RUN_OK   ARM_PERMIT = CMD_IDLE.REL_SEEN" (exclude_from_sim no) (at 20.32 274.32 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "18bbec97-4072-4d12-8fec-5c966d51c3c3"))
+(text "U6 must be Diodes 74LVC08AT14-13 (IOFF specified). No footprints assigned. Timing acceptance (arm edge near RUN_OK recovery) is OPEN." (exclude_from_sim no) (at 20.32 279.4 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "53470fd3-5106-4991-872e-56118e03ad1d"))
+(text "Teensy interface by global label: CMD_M1A..CMD_M2B = pins 2-5, HB = 6, READY = 7, ARMED = 8, STOP_OK = 15." (exclude_from_sim no) (at 20.32 284.48 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "97fb09db-1aa8-4f91-9f92-69c90ee03a3e"))
+(symbol (lib_id "devastator:74LVC08A") (at 60.96 60.96 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "564c980e-10ad-4b58-8ff0-ce1b07cac390") (property "Reference" "U6" (at 64.77 46.99 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "74LVC08A" (at 64.77 74.93 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 60.96 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 60.96 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 60.96 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "MPN" "Diodes 74LVC08AT14-13" (at 60.96 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "TSSOP-14" (at 60.96 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "b66dbbc1-aea1-4f49-b93b-4ed1d12c1fff")) (pin "2" (uuid "7cbf8a40-daa7-432b-831f-da2d34e040d1")) (pin "4" (uuid "a3572e47-f0bb-4c9c-9541-89e4eaf844f7")) (pin "5" (uuid "497c0f65-1026-468b-b1d5-307a73818abd")) (pin "9" (uuid "41cc4b83-4d54-4d85-a46c-be0db0b6480b")) (pin "10" (uuid "ea0e128b-432b-4567-81b2-c20b4cdfe116")) (pin "12" (uuid "82ac1727-f55e-47ac-b9d7-f4c88338185a")) (pin "13" (uuid "f58947ed-7845-4531-a149-68603f3b4254")) (pin "3" (uuid "574a0ff3-e38b-4ae4-8b69-604fa2bd3690")) (pin "6" (uuid "f33cdbbd-fd10-49dd-a6e5-cccd083182ac")) (pin "8" (uuid "6372c2b3-4c09-40cb-825c-1ee4c28a7ac4")) (pin "11" (uuid "5871ffc0-f3c7-4c94-a988-cd961f5c0eb4")) (pin "14" (uuid "34aa7342-9017-4166-a47c-40666d480d7c")) (pin "7" (uuid "e62d5dd4-eb9a-4f99-9a5d-ac27dc8568c3")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "U6") (unit 1)))))
+(symbol (lib_id "power:+3V3") (at 60.96 45.72 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "9f521221-fc57-43e7-be6d-fe7e9cf6dd03") (property "Reference" "#PWR001" (at 60.96 45.72 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "+3V3" (at 60.96 41.91 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 60.96 45.72 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 60.96 45.72 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 60.96 45.72 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "94b7794f-7411-4a8c-aedf-63b916a99ce1")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR001") (unit 1)))))
+(symbol (lib_id "power:GND") (at 60.96 76.2 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "a634494e-dbd2-4e88-8ce2-84b1fce854e3") (property "Reference" "#PWR002" (at 60.96 76.2 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 60.96 81.28 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 60.96 76.2 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 60.96 76.2 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 60.96 76.2 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "d99ac768-9b68-4422-af39-dd88476475fe")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR002") (unit 1)))))
+(symbol (lib_id "devastator:SN74LV21A") (at 60.96 124.46 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "47d66586-f5cc-4c8e-8b18-ba4ff0c53283") (property "Reference" "U7" (at 64.77 105.41 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "SN74LV21A" (at 64.77 143.51 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 60.96 124.46 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 60.96 124.46 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 60.96 124.46 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "MPN" "TI SN74LV21APWR" (at 60.96 124.46 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "TSSOP-14" (at 60.96 124.46 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "9491712a-632b-40ea-a234-358ac779e400")) (pin "2" (uuid "3bf23ed2-0beb-41a4-90cb-9d8987d3a538")) (pin "4" (uuid "01fe1f26-842a-43f0-95e0-ae3c5329e27d")) (pin "5" (uuid "24ed3a8c-1fae-4b6e-ae6a-d373dee5d3ca")) (pin "9" (uuid "7e1b89e5-c3d8-4719-a371-fb2fb464b05d")) (pin "10" (uuid "078b3248-d8d9-41ca-9fe9-e4d19323ee49")) (pin "12" (uuid "d881cf26-7dc7-47c3-862f-006b68ee7725")) (pin "13" (uuid "87e0ea30-c229-4b0e-b245-7692ca2f3cb4")) (pin "6" (uuid "931e5a2d-e582-46a2-ae4f-302655b5c300")) (pin "8" (uuid "519a0220-215d-439d-83d9-982d49b27b04")) (pin "3" (uuid "92bca0b6-ce04-44df-aa5c-b8181cf0b90f")) (pin "11" (uuid "e64a0fbe-169f-4926-acb0-acf3b655907b")) (pin "14" (uuid "3fcabfe1-de9d-4e27-865e-f11ca669c9ca")) (pin "7" (uuid "4c031857-658f-497d-b96e-47fda2025298")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "U7") (unit 1)))))
+(symbol (lib_id "power:+3V3") (at 60.96 104.14 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "3c2adfac-7e50-4f6c-a803-5b76b9b4ade4") (property "Reference" "#PWR003" (at 60.96 104.14 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "+3V3" (at 60.96 100.33 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 60.96 104.14 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 60.96 104.14 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 60.96 104.14 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "36004e3b-cfc3-4162-9dbc-ad870c4a5870")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR003") (unit 1)))))
+(symbol (lib_id "power:GND") (at 60.96 144.78 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "0d619b61-2058-4de3-bee6-e9236609f793") (property "Reference" "#PWR004" (at 60.96 144.78 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 60.96 149.86 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 60.96 144.78 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 60.96 144.78 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 60.96 144.78 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "a6cf3bbb-1f65-432a-b4d6-c6f271a052b2")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR004") (unit 1)))))
+(symbol (lib_id "power:+3V3") (at 45.72 132.08 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "3fd193c0-7c06-4225-b271-c294371554e9") (property "Reference" "#PWR005" (at 45.72 132.08 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "+3V3" (at 45.72 128.27 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 45.72 132.08 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 45.72 132.08 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 45.72 132.08 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "0d2a0b8b-997e-492a-8e78-a9f9fc155a11")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR005") (unit 1)))))
+(symbol (lib_id "devastator:SN74LVC1G3208") (at 60.96 185.42 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "6cb048a9-f63b-4766-8695-46a897cb84c6") (property "Reference" "U8" (at 64.77 173.99 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "SN74LVC1G3208" (at 64.77 196.85 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 60.96 185.42 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 60.96 185.42 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 60.96 185.42 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "MPN" "TI SN74LVC1G3208DBVR" (at 60.96 185.42 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "SOT-23-6" (at 60.96 185.42 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "b988a1dd-33a2-410b-9399-aef771e93c4d")) (pin "3" (uuid "0e5ebe55-7246-405d-b88a-c14fea5a34ad")) (pin "6" (uuid "750b8d1c-b00f-41a7-8a37-158667a06447")) (pin "4" (uuid "482cec92-e0bd-42a7-96cb-73d0282af67f")) (pin "5" (uuid "29151868-a4ce-4d3c-bbf1-068b6b4eee39")) (pin "2" (uuid "4ccb6440-8ea5-4642-9399-84810c82a7f5")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "U8") (unit 1)))))
+(symbol (lib_id "power:+3V3") (at 60.96 172.72 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "6570ae1c-9de4-47d8-864c-5d3ab3d2a843") (property "Reference" "#PWR006" (at 60.96 172.72 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "+3V3" (at 60.96 168.91 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 60.96 172.72 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 60.96 172.72 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 60.96 172.72 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "59302c3e-8cbd-4451-bd93-78e43c39157f")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR006") (unit 1)))))
+(symbol (lib_id "power:GND") (at 60.96 198.12 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "1b92293c-6a04-4a1e-930c-1c89226be936") (property "Reference" "#PWR007" (at 60.96 198.12 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 60.96 203.2 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 60.96 198.12 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 60.96 198.12 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 60.96 198.12 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "bb34e6e0-5bff-419b-a6f9-71dea8cda61d")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR007") (unit 1)))))
+(symbol (lib_id "devastator:SN74LVC1G74") (at 60.96 236.22 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "40de0b22-d1a3-4461-a173-3ce0f2f7abac") (property "Reference" "U9" (at 64.77 224.79 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "SN74LVC1G74" (at 64.77 247.65 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 60.96 236.22 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 60.96 236.22 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 60.96 236.22 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "MPN" "TI SN74LVC1G74DCTR" (at 60.96 236.22 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "SSOP-8 (DCT)" (at 60.96 236.22 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "2" (uuid "5a9d7f60-4d69-493a-950b-40c6b4647fee")) (pin "1" (uuid "c637a053-6be7-4db8-8233-cc372669a5bc")) (pin "6" (uuid "9ea5785e-c75e-493e-b282-6051ecd30274")) (pin "7" (uuid "72997a23-d335-425e-b011-3f1c91419994")) (pin "5" (uuid "9fa2b814-5e4a-48b3-879e-3ceb618e5f3a")) (pin "3" (uuid "a8b91d88-6a54-4137-b655-0d2e763c77c8")) (pin "8" (uuid "4474f780-cfa8-4380-8d41-7dd8a6832121")) (pin "4" (uuid "35f40e81-a9b9-4ead-9b90-4386ff5ecfc4")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "U9") (unit 1)))))
+(symbol (lib_id "power:+3V3") (at 60.96 223.52 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "7815a043-2492-4f54-b041-8ded53751c70") (property "Reference" "#PWR008" (at 60.96 223.52 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "+3V3" (at 60.96 219.71 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 60.96 223.52 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 60.96 223.52 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 60.96 223.52 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "55742c8c-f2dc-4092-9d50-6d2a1f1be588")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR008") (unit 1)))))
+(symbol (lib_id "power:GND") (at 60.96 248.92 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "b0edff8d-518f-473a-abb9-7a09a95003a7") (property "Reference" "#PWR009" (at 60.96 248.92 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 60.96 254 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 60.96 248.92 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 60.96 248.92 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 60.96 248.92 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "758ae5ea-cfd7-4cf0-8e9b-4711663884ca")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR009") (unit 1)))))
+(symbol (lib_id "power:+3V3") (at 45.72 241.3 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "6af17fc7-089e-40df-8808-5a87fe81834a") (property "Reference" "#PWR010" (at 45.72 241.3 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "+3V3" (at 45.72 237.49 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 45.72 241.3 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 45.72 241.3 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 45.72 241.3 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "e5a55a51-6946-4af3-b598-a8d82e13f2cf")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR010") (unit 1)))))
+(symbol (lib_id "devastator:SN74LVC32A") (at 149.86 60.96 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "cbfb3900-6e33-4c7e-a4cd-a16de29f54f3") (property "Reference" "U13" (at 153.67 44.45 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "SN74LVC32A" (at 153.67 77.47 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 149.86 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 149.86 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 149.86 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "MPN" "TI SN74LVC32APWR" (at 149.86 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "TSSOP-14" (at 149.86 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "908503a7-a875-45e7-9141-6cecb51c8b65")) (pin "2" (uuid "fa58b9ec-4685-467a-be98-b1b0744b4f86")) (pin "4" (uuid "eee20d94-2008-4b3e-915d-61bf2979c76f")) (pin "5" (uuid "5ee31979-f4da-4fdc-906a-e8bf95b399dc")) (pin "9" (uuid "ed1a354e-431e-408e-b4d4-a8e00fce7f48")) (pin "10" (uuid "95855048-5c4f-4862-ac26-b14f8571d9ff")) (pin "12" (uuid "51a014f7-e4e1-4245-9305-12ac4dbdf985")) (pin "13" (uuid "b121bb45-1b32-42ad-bfcb-7098359c9c51")) (pin "3" (uuid "77290c55-93dd-4295-8f6d-3ef16394c7ac")) (pin "6" (uuid "6f0d7701-9cb6-4c68-8c2d-07c9804a320e")) (pin "8" (uuid "a1337fbb-1e70-43e4-9515-fda1b3e046b8")) (pin "11" (uuid "1bcc97a3-9c2f-402f-a318-2489f8fcffe5")) (pin "14" (uuid "fa9e72fc-2f8e-40ab-9ecb-fabc8b5bce30")) (pin "7" (uuid "bb102c14-c65d-400a-b119-c26dc8f1df7c")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "U13") (unit 1)))))
+(symbol (lib_id "power:+3V3") (at 149.86 43.18 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "55ac9cb5-788e-4dda-8ca1-48b5b4ed35c9") (property "Reference" "#PWR011" (at 149.86 43.18 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "+3V3" (at 149.86 39.37 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 149.86 43.18 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 149.86 43.18 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 149.86 43.18 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "982ba646-c0c8-4832-9120-fca40e531fad")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR011") (unit 1)))))
+(symbol (lib_id "power:GND") (at 149.86 78.74 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "e27a1bc1-f566-4a41-a9a1-620bac3b3dd1") (property "Reference" "#PWR012" (at 149.86 78.74 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 149.86 83.82 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 149.86 78.74 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 149.86 78.74 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 149.86 78.74 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "a6169020-0005-47c1-b269-4694cef6e770")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR012") (unit 1)))))
+(symbol (lib_id "power:GND") (at 134.62 68.58 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "fd5b7a3f-6806-460e-a464-1c92c1f07ce7") (property "Reference" "#PWR013" (at 134.62 68.58 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 134.62 73.66 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 134.62 68.58 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 134.62 68.58 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 134.62 68.58 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "37294730-bef9-4e24-840b-1cd59388454f")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR013") (unit 1)))))
+(symbol (lib_id "devastator:SN74LVC1G123B") (at 149.86 119.38 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "9b81e03a-adf0-48f6-b340-e8abc8cdbb90") (property "Reference" "U15" (at 153.67 107.95 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "SN74LVC1G123" (at 153.67 130.81 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 149.86 119.38 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 149.86 119.38 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 149.86 119.38 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "MPN" "TI SN74LVC1G123DCTR" (at 149.86 119.38 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "SSOP-8 (DCT)" (at 149.86 119.38 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "2739edc7-c544-43ee-bf80-43fac204241f")) (pin "3" (uuid "d55dce20-4258-43e0-9962-89129aa39723")) (pin "2" (uuid "9b167b5a-4244-4ea3-be28-4bc4ea7f115c")) (pin "5" (uuid "f7396d64-c3ea-4324-abc1-0c429534b5cb")) (pin "7" (uuid "e441ea72-3df4-4ed3-8ef2-a63f759b4873")) (pin "6" (uuid "8d080794-4249-411d-8acd-907ab9cc6e5e")) (pin "8" (uuid "8b6d34e4-781d-4da6-9585-3ef3b64f5f62")) (pin "4" (uuid "e3d2377e-48b4-4fac-9884-8bcb99c15ec5")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "U15") (unit 1)))))
+(symbol (lib_id "power:+3V3") (at 149.86 106.68 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "b4f240ed-07d1-4028-a3d6-3d2c0ab105df") (property "Reference" "#PWR014" (at 149.86 106.68 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "+3V3" (at 149.86 102.87 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 149.86 106.68 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 149.86 106.68 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 149.86 106.68 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "2288f240-0292-4fb0-968c-0ce63181686a")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR014") (unit 1)))))
+(symbol (lib_id "power:GND") (at 149.86 132.08 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "e39dfcdc-685c-4d93-b4a2-eb6b1d634693") (property "Reference" "#PWR015" (at 149.86 132.08 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 149.86 137.16 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 149.86 132.08 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 149.86 132.08 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 149.86 132.08 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "02b78034-2ff5-4549-8cfc-e56c4940f066")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR015") (unit 1)))))
+(symbol (lib_id "power:+3V3") (at 134.62 121.92 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "f8f78dbe-ed8a-4894-93e6-65c9eeb2463f") (property "Reference" "#PWR016" (at 134.62 121.92 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "+3V3" (at 134.62 118.11 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 134.62 121.92 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 134.62 121.92 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 134.62 121.92 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "c304db3f-0d6f-43f3-b830-1537a7c7089d")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR016") (unit 1)))))
+(symbol (lib_id "devastator:SN74LVC1G02") (at 149.86 160.02 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "6253deb7-3b50-4d29-98eb-0b96b3c51b12") (property "Reference" "U16" (at 153.67 148.59 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "SN74LVC1G02" (at 153.67 171.45 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 149.86 160.02 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 149.86 160.02 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 149.86 160.02 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "MPN" "TI SN74LVC1G02DBVR" (at 149.86 160.02 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "SOT-23-5" (at 149.86 160.02 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "b48d5beb-e83c-46c1-9418-ca766240ffa8")) (pin "2" (uuid "f4e6ee43-9b4f-4044-8a4f-4b141381780a")) (pin "4" (uuid "954016a5-ba67-4827-90f1-1e044294b2c8")) (pin "5" (uuid "0b16101c-6178-4ee4-98d9-45fc29cf21c6")) (pin "3" (uuid "f879eeee-9d87-470c-97e8-86d01b64bc9d")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "U16") (unit 1)))))
+(symbol (lib_id "power:+3V3") (at 149.86 147.32 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "59b0edb1-8b8e-4405-9fa0-326f3275fcd8") (property "Reference" "#PWR017" (at 149.86 147.32 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "+3V3" (at 149.86 143.51 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 149.86 147.32 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 149.86 147.32 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 149.86 147.32 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "e9db1fc8-bfe5-4486-8334-d7483da21901")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR017") (unit 1)))))
+(symbol (lib_id "power:GND") (at 149.86 172.72 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "ad85d5a5-edf5-4841-9a96-732441b1091c") (property "Reference" "#PWR018" (at 149.86 172.72 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 149.86 177.8 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 149.86 172.72 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 149.86 172.72 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 149.86 172.72 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "05562867-97c9-4fdd-b4f8-899502d53776")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR018") (unit 1)))))
+(symbol (lib_id "devastator:SN74LVC1G08") (at 149.86 200.66 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "d56cb530-fd7d-47cd-ad5c-4947635cea01") (property "Reference" "U12" (at 153.67 189.23 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "SN74LVC1G08" (at 153.67 212.09 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 149.86 200.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 149.86 200.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 149.86 200.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "MPN" "TI SN74LVC1G08DBVR" (at 149.86 200.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "SOT-23-5" (at 149.86 200.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "5daf07a9-13a1-4d9d-bb66-808e9d573b2b")) (pin "2" (uuid "ced8d1d4-3f2e-473e-8460-cbeeeb66f4b0")) (pin "4" (uuid "e2e538f0-868a-4a40-b4aa-1bffd7ff76f7")) (pin "5" (uuid "c812f339-1489-4da9-a3fc-170bf0ed1b56")) (pin "3" (uuid "89e23b09-98d9-49c3-8b34-026455b0665a")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "U12") (unit 1)))))
+(symbol (lib_id "power:+3V3") (at 149.86 187.96 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "ae1c1aa1-5f6d-4d7c-8d46-a7f79ae755b1") (property "Reference" "#PWR019" (at 149.86 187.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "+3V3" (at 149.86 184.15 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 149.86 187.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 149.86 187.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 149.86 187.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "e678daf2-9444-40e3-8947-4228fd70c5fc")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR019") (unit 1)))))
+(symbol (lib_id "power:GND") (at 149.86 213.36 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "ee3c6c40-6a4e-4c80-9121-283065850c31") (property "Reference" "#PWR020" (at 149.86 213.36 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 149.86 218.44 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 149.86 213.36 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 149.86 213.36 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 149.86 213.36 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "42e8168f-b6f2-469a-aac0-1d0173d6684c")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR020") (unit 1)))))
+(symbol (lib_id "devastator:SN74LVC1G04") (at 149.86 238.76 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "67cf1776-9b87-4336-9b67-86812182fe11") (property "Reference" "U17" (at 153.67 227.33 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "SN74LVC1G04" (at 153.67 250.19 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 149.86 238.76 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 149.86 238.76 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 149.86 238.76 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "MPN" "TI SN74LVC1G04DBVR" (at 149.86 238.76 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "SOT-23-5" (at 149.86 238.76 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "2" (uuid "3f3572d3-bf6c-4e49-9960-270c08531693")) (pin "4" (uuid "598d2963-7e5d-4d0a-be15-9350b5fa9e2f")) (pin "1" (uuid "2fd9bdaf-6257-40fd-b6e9-9e7716fc5a0f")) (pin "5" (uuid "80791dc7-5dc6-4442-a9eb-ae11a5d584dc")) (pin "3" (uuid "944dd4cc-f082-45a0-b48b-5191432c25ee")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "U17") (unit 1)))))
+(symbol (lib_id "power:+3V3") (at 149.86 226.06 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "b0ad4c82-3bb4-47e8-a6f0-bdcb6c1e5e28") (property "Reference" "#PWR021" (at 149.86 226.06 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "+3V3" (at 149.86 222.25 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 149.86 226.06 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 149.86 226.06 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 149.86 226.06 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "7c7e89fc-7e39-4f87-bde2-be84e1a78779")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR021") (unit 1)))))
+(symbol (lib_id "power:GND") (at 149.86 251.46 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "b02f60b5-84a6-4868-a2c2-dc3e33be0c6a") (property "Reference" "#PWR022" (at 149.86 251.46 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 149.86 256.54 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 149.86 251.46 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 149.86 251.46 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 149.86 251.46 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "5701c314-907a-41dd-bf10-005b37e7c182")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR022") (unit 1)))))
+(symbol (lib_id "devastator:SN74LVC1G123") (at 238.76 60.96 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "f98c86f8-849d-44c0-83e9-be89320047c7") (property "Reference" "U10" (at 242.57 49.53 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "SN74LVC1G123" (at 242.57 72.39 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 238.76 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 238.76 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 238.76 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "MPN" "TI SN74LVC1G123DCTR" (at 238.76 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "SSOP-8 (DCT)" (at 238.76 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "2" (uuid "4b609e9c-02a1-447f-b7fb-2e24c2edc778")) (pin "3" (uuid "94a4a63e-5538-4712-b7db-c758996ee32e")) (pin "1" (uuid "2aadf68a-0598-42af-8c1a-fb85c9c9c5d0")) (pin "5" (uuid "58cd0ea5-d9a0-4d69-acc3-64143afd62ea")) (pin "7" (uuid "544348f4-0cca-4f41-9f0c-865ef68d3fae")) (pin "6" (uuid "3eb54b57-49fa-4a8e-b9af-5fea7b934ba8")) (pin "8" (uuid "84f4065c-6fc5-4e65-9c7f-fb55edcf752f")) (pin "4" (uuid "f7ac4063-e19c-41d4-91b8-00d9c3d2c908")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "U10") (unit 1)))))
+(symbol (lib_id "power:+3V3") (at 238.76 48.26 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "a0c010c9-ca46-4952-8173-3f916bf3c5d3") (property "Reference" "#PWR023" (at 238.76 48.26 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "+3V3" (at 238.76 44.45 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 238.76 48.26 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 238.76 48.26 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 238.76 48.26 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "d8627ce6-4085-47fe-8905-6fab16dfe33b")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR023") (unit 1)))))
+(symbol (lib_id "power:GND") (at 238.76 73.66 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "d854d30c-eeb7-4fc7-af69-ce16d6e2772b") (property "Reference" "#PWR024" (at 238.76 73.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 238.76 78.74 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 238.76 73.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 238.76 73.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 238.76 73.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "340150e2-acc0-4e0a-9302-aa5a93db2112")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR024") (unit 1)))))
+(symbol (lib_id "power:+3V3") (at 223.52 60.96 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "fbfc31dc-3df1-4bcc-a174-e0b5edd1af52") (property "Reference" "#PWR025" (at 223.52 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "+3V3" (at 223.52 57.15 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 223.52 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 223.52 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 223.52 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "de0a9193-73d7-458d-ba62-e9f3c3be7645")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR025") (unit 1)))))
+(symbol (lib_id "power:GND") (at 223.52 66.04 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "117d51dc-f154-42d6-9734-2fa662eeea42") (property "Reference" "#PWR026" (at 223.52 66.04 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 223.52 71.12 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 223.52 66.04 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 223.52 66.04 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 223.52 66.04 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "c1cedbb8-0ffa-4933-8c87-76ca55b3ec6b")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR026") (unit 1)))))
+(symbol (lib_id "devastator:SN74LVC2G17") (at 238.76 104.14 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "97e008ba-7d32-4ff6-b303-43a3a56ffc6c") (property "Reference" "U11" (at 242.57 92.71 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "SN74LVC2G17" (at 242.57 115.57 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 238.76 104.14 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 238.76 104.14 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 238.76 104.14 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "MPN" "TI SN74LVC2G17DBVR" (at 238.76 104.14 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "SOT-23-6" (at 238.76 104.14 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "47803b97-b3bc-4197-898c-7fda6bd47be8")) (pin "3" (uuid "39945581-870d-4cc2-bbe7-00f86b65920d")) (pin "6" (uuid "f5ebeef2-103e-4fd6-969c-2f2844fb601d")) (pin "4" (uuid "7dbfa9e2-78eb-4f0e-a05e-2fb0c78e1c12")) (pin "5" (uuid "623adfaa-b2dd-4917-b746-5691dc9ab0b2")) (pin "2" (uuid "16097629-e50f-431c-99b1-ab2a3ddd3e0b")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "U11") (unit 1)))))
+(symbol (lib_id "power:+3V3") (at 238.76 91.44 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "e733cedc-0411-42a5-b051-deb276218a52") (property "Reference" "#PWR027" (at 238.76 91.44 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "+3V3" (at 238.76 87.63 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 238.76 91.44 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 238.76 91.44 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 238.76 91.44 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "0187d884-67a6-42f4-8ebb-638d1f30ce26")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR027") (unit 1)))))
+(symbol (lib_id "power:GND") (at 238.76 116.84 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "9763cab6-d383-466b-92a4-5736b30ef2dd") (property "Reference" "#PWR028" (at 238.76 116.84 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 238.76 121.92 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 238.76 116.84 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 238.76 116.84 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 238.76 116.84 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "14b98678-4487-43ee-b540-d1d6dcd6697f")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR028") (unit 1)))))
+(symbol (lib_id "devastator:TPS3839K33") (at 238.76 147.32 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "072c29f0-c343-4955-8666-dd68eb47bf5b") (property "Reference" "U14" (at 242.57 135.89 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "TPS3839K33" (at 242.57 158.75 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 238.76 147.32 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 238.76 147.32 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 238.76 147.32 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "MPN" "TI TPS3839K33DBZR" (at 238.76 147.32 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "SOT-23-3" (at 238.76 147.32 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "2" (uuid "f03f9a52-e6b4-408b-bc61-ccc41db9a428")) (pin "3" (uuid "a7e3f72d-4d65-4ed2-b645-7418661c2b59")) (pin "1" (uuid "9243b5a2-462b-4ab0-9913-4b6f5230e3e7")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "U14") (unit 1)))))
+(symbol (lib_id "power:+3V3") (at 238.76 134.62 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "98d72f01-2908-412c-8fa4-62a575a40d9c") (property "Reference" "#PWR029" (at 238.76 134.62 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "+3V3" (at 238.76 130.81 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 238.76 134.62 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 238.76 134.62 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 238.76 134.62 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "00a54e24-f3b5-42e5-9a46-f15d290baa9b")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR029") (unit 1)))))
+(symbol (lib_id "power:GND") (at 238.76 160.02 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "61097268-0e18-44b1-b996-df80e69571bc") (property "Reference" "#PWR030" (at 238.76 160.02 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 238.76 165.1 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 238.76 160.02 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 238.76 160.02 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 238.76 160.02 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "1ecd43d6-62f9-49e8-86de-744f36d0a130")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR030") (unit 1)))))
+(symbol (lib_id "Device:R") (at 215.9 182.88 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "961a463c-231c-4f52-a6d9-51f95ef452ac") (property "Reference" "R1" (at 218.44 181.61 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "10k" (at 218.44 184.15 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 215.9 182.88 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 215.9 182.88 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 215.9 182.88 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "0603 1%" (at 215.9 182.88 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "6390ac77-ab91-4f55-bc62-0bd76f71cb37")) (pin "2" (uuid "8c372ee2-b5ba-48ea-8a0d-c9535227ee70")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "R1") (unit 1)))))
+(symbol (lib_id "power:GND") (at 215.9 186.69 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "fd857864-b5b1-4c49-86f7-b86d8b7d2b6f") (property "Reference" "#PWR031" (at 215.9 186.69 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 215.9 191.77 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 215.9 186.69 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 215.9 186.69 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 215.9 186.69 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "b77ab8e6-e7ea-4b83-a841-187f8ac9056f")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR031") (unit 1)))))
+(symbol (lib_id "Device:R") (at 231.14 182.88 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "ad2f262e-3d55-4349-8fc5-382240eb0b01") (property "Reference" "R2" (at 233.68 181.61 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "10k" (at 233.68 184.15 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 231.14 182.88 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 231.14 182.88 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 231.14 182.88 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "0603 1%" (at 231.14 182.88 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "5630a483-b08d-4954-b8c6-e64b3f92396f")) (pin "2" (uuid "e4468bda-8476-4ab5-a80f-f9f71ba1d70b")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "R2") (unit 1)))))
+(symbol (lib_id "power:GND") (at 231.14 186.69 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "5d82fe4b-b8a6-4e5c-a26c-f9aa88efec1c") (property "Reference" "#PWR032" (at 231.14 186.69 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 231.14 191.77 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 231.14 186.69 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 231.14 186.69 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 231.14 186.69 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "b5a89811-e198-4a40-a7a6-f309b298c3f8")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR032") (unit 1)))))
+(symbol (lib_id "Device:R") (at 246.38 182.88 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "13dc5bec-8f0f-4aed-9099-1c35c9ae565e") (property "Reference" "R3" (at 248.92 181.61 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "10k" (at 248.92 184.15 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 246.38 182.88 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 246.38 182.88 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 246.38 182.88 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "0603 1%" (at 246.38 182.88 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "ca04e574-5905-4332-b0b9-d486cf5737af")) (pin "2" (uuid "8ad0892f-fc52-45ea-ac42-607c0bd9f5b5")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "R3") (unit 1)))))
+(symbol (lib_id "power:GND") (at 246.38 186.69 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "009eff4a-98f2-4d0b-a7b0-ebbf3e3dc45c") (property "Reference" "#PWR033" (at 246.38 186.69 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 246.38 191.77 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 246.38 186.69 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 246.38 186.69 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 246.38 186.69 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "1bcc0958-ae38-46f8-8ea7-f82b9c5de9d5")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR033") (unit 1)))))
+(symbol (lib_id "Device:R") (at 261.62 182.88 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "2ce8f880-76e9-41cc-9e8f-3120048205fe") (property "Reference" "R4" (at 264.16 181.61 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "10k" (at 264.16 184.15 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 261.62 182.88 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 261.62 182.88 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 261.62 182.88 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "0603 1%" (at 261.62 182.88 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "f1fc7d69-9c68-4aac-b743-b39afd1a89e2")) (pin "2" (uuid "55cc4efa-a639-4865-9888-9871cbab86fb")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "R4") (unit 1)))))
+(symbol (lib_id "power:GND") (at 261.62 186.69 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "25be9528-c740-4ba9-b8c1-5c4ff5cdc3ac") (property "Reference" "#PWR034" (at 261.62 186.69 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 261.62 191.77 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 261.62 186.69 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 261.62 186.69 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 261.62 186.69 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "913c2bc0-8b48-488d-9292-493cad681677")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR034") (unit 1)))))
+(symbol (lib_id "Device:R") (at 276.86 182.88 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "8eb658bb-2fc3-4215-bf79-616f00f6a040") (property "Reference" "R5" (at 279.4 181.61 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "100k" (at 279.4 184.15 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 276.86 182.88 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 276.86 182.88 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 276.86 182.88 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "0603 1%" (at 276.86 182.88 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "48dab136-6b62-4ac6-bdb8-8bfcd0409273")) (pin "2" (uuid "e277a0d1-9b82-4949-9450-a7e4cf2f6aed")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "R5") (unit 1)))))
+(symbol (lib_id "power:GND") (at 276.86 186.69 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "bee4de75-76d3-45c4-9ac9-7f380a04367b") (property "Reference" "#PWR035" (at 276.86 186.69 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 276.86 191.77 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 276.86 186.69 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 276.86 186.69 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 276.86 186.69 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "f1a5b3d2-449b-413b-9b09-f59d5a55bca7")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR035") (unit 1)))))
+(symbol (lib_id "Device:R") (at 292.1 182.88 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "1c11f226-3a5c-4957-a047-50148c4b5e0f") (property "Reference" "R6" (at 294.64 181.61 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "100k" (at 294.64 184.15 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 292.1 182.88 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 292.1 182.88 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 292.1 182.88 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "0603 1%" (at 292.1 182.88 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "a67e249f-0434-4d4b-ac7e-a422202f4a58")) (pin "2" (uuid "822fa218-6bbf-4830-bea5-2261dd7b2922")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "R6") (unit 1)))))
+(symbol (lib_id "power:GND") (at 292.1 186.69 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "cc4ed1f7-217a-4d6a-9ba0-88bcaf77e025") (property "Reference" "#PWR036" (at 292.1 186.69 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 292.1 191.77 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 292.1 186.69 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 292.1 186.69 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 292.1 186.69 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "e09d7ace-bc9b-4a93-8dd7-3135040e15af")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR036") (unit 1)))))
+(symbol (lib_id "Device:R") (at 215.9 210.82 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "4a1bfaa9-b889-40e3-b377-74778a971225") (property "Reference" "R7" (at 218.44 209.55 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "100k" (at 218.44 212.09 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 215.9 210.82 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 215.9 210.82 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 215.9 210.82 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "0603 1%" (at 215.9 210.82 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "23b4a6b3-fc85-4fbb-a2f2-d8b9bf4aa32b")) (pin "2" (uuid "03d3c32c-2b2a-4751-8858-6e4551f16f7b")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "R7") (unit 1)))))
+(symbol (lib_id "power:GND") (at 215.9 214.63 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "4f7d099b-d1ed-46ec-bed4-ee509a693f55") (property "Reference" "#PWR037" (at 215.9 214.63 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 215.9 219.71 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 215.9 214.63 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 215.9 214.63 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 215.9 214.63 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "c35f6a84-7ba8-424f-8e26-7fa6e3ea1ec0")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR037") (unit 1)))))
+(symbol (lib_id "Device:R") (at 231.14 210.82 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "b95ad861-dd89-4677-8b05-740e4645cdbb") (property "Reference" "R8" (at 233.68 209.55 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "100k" (at 233.68 212.09 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 231.14 210.82 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 231.14 210.82 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 231.14 210.82 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "0603 1%" (at 231.14 210.82 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "242457bf-ad17-43e9-a191-a45fa31e2df0")) (pin "2" (uuid "a78a8543-d587-4151-8187-2f0d9516c7ec")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "R8") (unit 1)))))
+(symbol (lib_id "power:GND") (at 231.14 214.63 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "8c82c613-c421-4d51-829c-49a5fb98f356") (property "Reference" "#PWR038" (at 231.14 214.63 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 231.14 219.71 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 231.14 214.63 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 231.14 214.63 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 231.14 214.63 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "fc4199c0-6864-4c6b-a47a-dbf38c972dbe")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR038") (unit 1)))))
+(symbol (lib_id "Device:R") (at 246.38 210.82 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "b369ae9c-ad9d-4ce4-95b1-2c697f39c322") (property "Reference" "R9" (at 248.92 209.55 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "100k" (at 248.92 212.09 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 246.38 210.82 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 246.38 210.82 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 246.38 210.82 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "0603 1%" (at 246.38 210.82 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "1e9b81d1-e30f-44ee-8852-04fbdaffb077")) (pin "2" (uuid "f02e9da9-2db4-428f-ac52-efd8f3007bf9")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "R9") (unit 1)))))
+(symbol (lib_id "power:GND") (at 246.38 214.63 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "5aff8581-11d6-4f6c-9200-964956b43bdf") (property "Reference" "#PWR039" (at 246.38 214.63 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 246.38 219.71 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 246.38 214.63 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 246.38 214.63 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 246.38 214.63 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "ffd950db-3a5a-48b7-af51-f6d3cb58f09b")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR039") (unit 1)))))
+(symbol (lib_id "Device:R") (at 261.62 210.82 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "e987e70b-7548-4c29-99b6-b759ff3a2165") (property "Reference" "R10" (at 264.16 209.55 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "10k" (at 264.16 212.09 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 261.62 210.82 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 261.62 210.82 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 261.62 210.82 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "0603 1%" (at 261.62 210.82 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "274201f1-1556-4e6e-8881-1a267a6f596c")) (pin "2" (uuid "75da310d-ab8f-41fb-8f7b-8835fb6dfd86")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "R10") (unit 1)))))
+(symbol (lib_id "power:GND") (at 261.62 214.63 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "28ff07f0-486b-4458-891b-12abf6cf6c3e") (property "Reference" "#PWR040" (at 261.62 214.63 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 261.62 219.71 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 261.62 214.63 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 261.62 214.63 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 261.62 214.63 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "c1fd4137-c325-49d3-8b1e-dc9165421334")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR040") (unit 1)))))
+(symbol (lib_id "Device:R") (at 276.86 210.82 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "2e9e957d-7c39-4dda-bc32-1f14cccfdeea") (property "Reference" "R17" (at 279.4 209.55 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "100k" (at 279.4 212.09 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 276.86 210.82 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 276.86 210.82 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 276.86 210.82 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "0603 1%" (at 276.86 210.82 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "deb653f6-ef01-4e37-b5a6-5b2697998187")) (pin "2" (uuid "16159dc2-a0b7-4592-9cf4-7b16a79027d5")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "R17") (unit 1)))))
+(symbol (lib_id "power:+3V3") (at 276.86 207.01 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "a5f3a090-5943-4210-b0e8-b44ffb158da0") (property "Reference" "#PWR041" (at 276.86 207.01 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "+3V3" (at 276.86 203.2 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 276.86 207.01 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 276.86 207.01 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 276.86 207.01 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "9d21c5fc-43c9-4c44-9636-d1955069df1a")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR041") (unit 1)))))
+(symbol (lib_id "Device:R") (at 292.1 210.82 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "573044a1-f607-4b02-a56a-c17dcc3a67b4") (property "Reference" "R18" (at 294.64 209.55 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "100k" (at 294.64 212.09 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 292.1 210.82 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 292.1 210.82 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 292.1 210.82 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "0603 1%" (at 292.1 210.82 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "894ec076-09ba-4450-abba-e424f31fbaff")) (pin "2" (uuid "c6dababc-0021-44d1-81b7-2afdb342b75c")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "R18") (unit 1)))))
+(symbol (lib_id "power:+3V3") (at 292.1 207.01 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "8cebe52c-0d4c-4a90-829c-3f8a866195af") (property "Reference" "#PWR042" (at 292.1 207.01 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "+3V3" (at 292.1 203.2 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 292.1 207.01 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 292.1 207.01 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 292.1 207.01 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "0bdf419e-8513-485f-a66b-33beb89b997d")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR042") (unit 1)))))
+(symbol (lib_id "Device:C") (at 215.9 238.76 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "a93e6654-425c-40cf-9980-00c06050bb7c") (property "Reference" "C7" (at 218.44 237.49 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "470n" (at 218.44 240.03 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 215.9 238.76 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 215.9 238.76 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 215.9 238.76 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "0805 X7R 25V" (at 215.9 238.76 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "e9a56702-a0e9-4650-9b90-78d0e814cf41")) (pin "2" (uuid "aa570692-2743-41e6-8e25-12e808923276")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "C7") (unit 1)))))
+(symbol (lib_id "Device:C") (at 231.14 238.76 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "d800105e-4fb0-4675-b64f-694553938c06") (property "Reference" "C8" (at 233.68 237.49 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "1u" (at 233.68 240.03 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 231.14 238.76 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 231.14 238.76 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 231.14 238.76 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "0805 X7R 25V" (at 231.14 238.76 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "90005740-eeaa-4b77-a603-01bd503629c6")) (pin "2" (uuid "917a64ac-9aa8-43e4-b1f5-0188830d1909")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "C8") (unit 1)))))
+(symbol (lib_id "Device:R") (at 299.72 60.96 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "4303aa91-c578-4af1-bee8-b6fd972fdfb8") (property "Reference" "R11" (at 302.26 59.69 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "1k" (at 302.26 62.23 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 299.72 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 299.72 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 299.72 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "0603 1%" (at 299.72 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "b737e6bf-eee2-4b34-b993-25e7e6777ba7")) (pin "2" (uuid "bfd925d2-4383-471d-95df-7d6485213fba")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "R11") (unit 1)))))
+(symbol (lib_id "power:+3V3") (at 299.72 57.15 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "6a5e4eea-7ba5-4460-85ee-3f1e75c749af") (property "Reference" "#PWR043" (at 299.72 57.15 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "+3V3" (at 299.72 53.34 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 299.72 57.15 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 299.72 57.15 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 299.72 57.15 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "461b0e41-4d83-470b-b1f8-5284fc3d9c7f")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR043") (unit 1)))))
+(symbol (lib_id "Device:R") (at 320.04 60.96 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "6829feee-9c5a-418b-b999-5450b7a7f9be") (property "Reference" "R12" (at 322.58 59.69 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "10k" (at 322.58 62.23 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 320.04 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 320.04 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 320.04 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "0603 1%" (at 320.04 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "a3ee1e68-d6ec-4732-b077-3007694dabc0")) (pin "2" (uuid "b809afe7-a7af-41ab-9629-e8dbc308ee4a")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "R12") (unit 1)))))
+(symbol (lib_id "power:GND") (at 320.04 64.77 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "84f64a42-d502-4075-abe3-45acfb872682") (property "Reference" "#PWR044" (at 320.04 64.77 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 320.04 69.85 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 320.04 64.77 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 320.04 64.77 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 320.04 64.77 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "e325ef57-ed6c-4e26-8ed4-f65ac5cc14a7")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR044") (unit 1)))))
+(symbol (lib_id "Device:R") (at 340.36 60.96 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "d6aef6bb-0067-46dc-8296-85880ddc17cf") (property "Reference" "R13" (at 342.9 59.69 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "10k" (at 342.9 62.23 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 340.36 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 340.36 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 340.36 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "0603 1%" (at 340.36 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "2c7ff82c-a0a6-4d4e-b784-b394c27f22ee")) (pin "2" (uuid "52a676da-bfd2-410d-99f9-5d1bdac3169b")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "R13") (unit 1)))))
+(symbol (lib_id "Device:C") (at 360.68 60.96 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "eed79d9f-1405-4b4d-ba20-5aac9e8d6d6a") (property "Reference" "C5" (at 363.22 59.69 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "100n" (at 363.22 62.23 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 360.68 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 360.68 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 360.68 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "0603 X7R" (at 360.68 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "51f15b74-7e2e-4031-bf31-d41a05ecc211")) (pin "2" (uuid "729ec791-7603-4c61-b8d3-e76e360ee577")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "C5") (unit 1)))))
+(symbol (lib_id "power:GND") (at 360.68 64.77 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "38c9f45b-df2c-4350-8226-578293846500") (property "Reference" "#PWR045" (at 360.68 64.77 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 360.68 69.85 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 360.68 64.77 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 360.68 64.77 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 360.68 64.77 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "60ccf6f4-6dd7-4d2f-b954-7960751fb3a7")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR045") (unit 1)))))
+(symbol (lib_id "Device:D_TVS") (at 381 60.96 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "6288c1e1-2320-40bc-8afc-7392402a9df0") (property "Reference" "D10" (at 383.54 59.69 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "ESD 3V3" (at 383.54 62.23 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 381 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 381 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 381 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "MPN" "MPN TBD" (at 381 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "SOD-323" (at 381 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "b88586bd-82dc-4238-9493-330d9985c05e")) (pin "2" (uuid "303cc6d3-0c69-4f94-8d88-61ace7395cb1")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "D10") (unit 1)))))
+(symbol (lib_id "power:GND") (at 384.81 60.96 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "6815f1d4-eebd-4a56-9dbd-175cce622440") (property "Reference" "#PWR046" (at 384.81 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 384.81 66.04 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 384.81 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 384.81 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 384.81 60.96 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "17c02664-02c0-4182-ab10-8e48f0cf0d26")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR046") (unit 1)))))
+(symbol (lib_id "Device:R") (at 299.72 93.98 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "8eeed384-549c-42e3-94a2-439c9d600ed1") (property "Reference" "R14" (at 302.26 92.71 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "1k" (at 302.26 95.25 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 299.72 93.98 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 299.72 93.98 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 299.72 93.98 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "0603 1%" (at 299.72 93.98 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "0c79bdf9-90bd-44f1-bf94-c7df0696f062")) (pin "2" (uuid "53de823b-2ff8-4f64-b9ed-58a93d69b7da")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "R14") (unit 1)))))
+(symbol (lib_id "power:+3V3") (at 299.72 90.17 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "4f1b851d-360b-4b2b-9f91-904726d198e2") (property "Reference" "#PWR047" (at 299.72 90.17 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "+3V3" (at 299.72 86.36 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 299.72 90.17 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 299.72 90.17 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 299.72 90.17 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "05d0f856-24e1-4fb9-8ea9-339529ce8a4f")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR047") (unit 1)))))
+(symbol (lib_id "Device:R") (at 320.04 93.98 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "e0f1a62b-8b07-4922-a2b9-3a073966eff4") (property "Reference" "R15" (at 322.58 92.71 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "10k" (at 322.58 95.25 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 320.04 93.98 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 320.04 93.98 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 320.04 93.98 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "0603 1%" (at 320.04 93.98 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "e0d6d021-3e76-4496-aab2-35dbfa4121f8")) (pin "2" (uuid "6ef00879-3b0b-45a1-a2c5-5aa44e7f608c")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "R15") (unit 1)))))
+(symbol (lib_id "power:GND") (at 320.04 97.79 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "cea04b6e-946e-4807-b601-570f7646eabb") (property "Reference" "#PWR048" (at 320.04 97.79 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 320.04 102.87 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 320.04 97.79 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 320.04 97.79 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 320.04 97.79 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "3795d138-84b9-4b11-b3cc-796318b21f18")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR048") (unit 1)))))
+(symbol (lib_id "Device:R") (at 340.36 93.98 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "4c88c281-e199-418c-8d63-682e5e1b9c08") (property "Reference" "R16" (at 342.9 92.71 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "10k" (at 342.9 95.25 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 340.36 93.98 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 340.36 93.98 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 340.36 93.98 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "0603 1%" (at 340.36 93.98 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "464f8a1c-5dbd-409f-ae10-1a0704bae334")) (pin "2" (uuid "dd2dea49-e3fc-4c2d-89dc-c770d283d6c6")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "R16") (unit 1)))))
+(symbol (lib_id "Device:C") (at 360.68 93.98 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "2651afa8-9a0e-4277-b57e-f9fe765431a9") (property "Reference" "C6" (at 363.22 92.71 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "100n" (at 363.22 95.25 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 360.68 93.98 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 360.68 93.98 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 360.68 93.98 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "0603 X7R" (at 360.68 93.98 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "ffa2ac89-303f-4e06-a603-5ff2d9611de9")) (pin "2" (uuid "76b0350e-bedc-4379-a0dc-92504d261387")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "C6") (unit 1)))))
+(symbol (lib_id "power:GND") (at 360.68 97.79 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "9d3c188f-4fe9-4207-b243-0b8810d0c912") (property "Reference" "#PWR049" (at 360.68 97.79 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 360.68 102.87 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 360.68 97.79 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 360.68 97.79 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 360.68 97.79 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "d52d90ff-5149-46c3-8374-e5e952410dc1")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR049") (unit 1)))))
+(symbol (lib_id "Device:D_TVS") (at 381 93.98 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "99a0c2dd-cb6f-455e-bfca-d7f8db153e46") (property "Reference" "D11" (at 383.54 92.71 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "ESD 3V3" (at 383.54 95.25 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 381 93.98 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 381 93.98 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 381 93.98 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "MPN" "MPN TBD" (at 381 93.98 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "SOD-323" (at 381 93.98 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "7f18c479-3100-4152-ae81-681b0af56c0d")) (pin "2" (uuid "76815a8d-0c80-4be2-8c77-9fcf0e720cf8")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "D11") (unit 1)))))
+(symbol (lib_id "power:GND") (at 384.81 93.98 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "e30a5050-2251-4a41-9ce1-878204916f60") (property "Reference" "#PWR050" (at 384.81 93.98 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 384.81 99.06 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 384.81 93.98 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 384.81 93.98 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 384.81 93.98 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "85d4955a-4ee9-4b61-b282-7f2bdaa9603b")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR050") (unit 1)))))
+(symbol (lib_id "Connector_Generic:Conn_01x02") (at 325.12 124.46 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "32d4264d-a050-46a1-be16-968fb9953022") (property "Reference" "J5" (at 327.66 123.19 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "STOP_LOOP_NC" (at 327.66 125.73 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 325.12 124.46 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 325.12 124.46 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 325.12 124.46 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "MPN" "series TBD" (at 325.12 124.46 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "keyed" (at 325.12 124.46 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "833f7c44-afea-4124-8ecd-83c27871a54b")) (pin "2" (uuid "76b13f64-b289-417c-ab8b-de41d499adb6")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "J5") (unit 1)))))
+(symbol (lib_id "Connector_Generic:Conn_01x02") (at 360.68 124.46 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "b5a6fd3c-6161-434e-8677-60b3358605af") (property "Reference" "J6" (at 363.22 123.19 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "ARM_BUTTON" (at 363.22 125.73 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 360.68 124.46 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 360.68 124.46 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 360.68 124.46 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "MPN" "series TBD" (at 360.68 124.46 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "keyed" (at 360.68 124.46 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "b878c05d-6138-414e-92d3-1e422ba10f71")) (pin "2" (uuid "de848710-6a5f-4998-997f-99aae9aad429")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "J6") (unit 1)))))
+(symbol (lib_id "Connector_Generic:Conn_01x05") (at 396.24 124.46 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "08e27ef2-b7ad-49fd-bd9e-0cc9075f6586") (property "Reference" "J4" (at 398.78 123.19 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "TO_MDD3A" (at 398.78 125.73 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 396.24 124.46 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 396.24 124.46 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 396.24 124.46 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "MPN" "series TBD" (at 396.24 124.46 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "keyed" (at 396.24 124.46 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "2490f828-4c3a-40e4-a2b5-2e0cae7415ed")) (pin "2" (uuid "2ada46ef-2c98-4730-a23f-915be8e2519e")) (pin "3" (uuid "5255e607-6768-45ef-864b-c890567adf0b")) (pin "4" (uuid "622fcdf9-2d47-40fd-b3e3-a84a8dc011e1")) (pin "5" (uuid "b1ca34ef-72e2-44e9-9f97-a2045d66309d")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "J4") (unit 1)))))
+(symbol (lib_id "power:GND") (at 391.16 129.54 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "38dca1bb-8151-48af-9faf-a5787962255a") (property "Reference" "#PWR051" (at 391.16 129.54 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 391.16 134.62 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 391.16 129.54 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 391.16 129.54 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 391.16 129.54 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "e749c525-2faa-4efa-beb9-173e7c8220c8")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR051") (unit 1)))))
+(symbol (lib_id "Connector:TestPoint") (at 299.72 165.1 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "39bd39df-56e2-49a1-9ec4-ce7a44d5fafa") (property "Reference" "TP1" (at 302.26 163.83 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "READY" (at 302.26 166.37 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 299.72 165.1 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 299.72 165.1 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 299.72 165.1 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "5f00069a-439d-4396-9b1e-d1a16af0e67b")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "TP1") (unit 1)))))
+(symbol (lib_id "Connector:TestPoint") (at 312.42 165.1 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "2cabaea0-48d6-4940-8e12-d785a267868d") (property "Reference" "TP2" (at 314.96 163.83 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "RUN_OK" (at 314.96 166.37 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 312.42 165.1 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 312.42 165.1 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 312.42 165.1 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "8647043b-7293-4010-acd5-429eb9fdc60c")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "TP2") (unit 1)))))
+(symbol (lib_id "Connector:TestPoint") (at 325.12 165.1 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "98b0de71-44c2-42f9-bbe1-fcd2749cb598") (property "Reference" "TP3" (at 327.66 163.83 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "REL_SEEN" (at 327.66 166.37 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 325.12 165.1 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 325.12 165.1 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 325.12 165.1 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "d911c065-b36d-499b-aedb-bf68a304abc6")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "TP3") (unit 1)))))
+(symbol (lib_id "Connector:TestPoint") (at 337.82 165.1 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "295df5e2-d592-45ed-8392-d9aa1da9cb1b") (property "Reference" "TP4" (at 340.36 163.83 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "CMD_IDLE" (at 340.36 166.37 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 337.82 165.1 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 337.82 165.1 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 337.82 165.1 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "670d26e2-3cf3-4eb2-85fb-bb9bfb31aa66")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "TP4") (unit 1)))))
+(symbol (lib_id "Connector:TestPoint") (at 350.52 165.1 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "553ea25a-7697-4428-a971-7fe91415e451") (property "Reference" "TP5" (at 353.06 163.83 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "ARMED" (at 353.06 166.37 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 350.52 165.1 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 350.52 165.1 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 350.52 165.1 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "78937bec-34ff-4c5d-b322-94c8271bd7ac")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "TP5") (unit 1)))))
+(symbol (lib_id "Connector:TestPoint") (at 363.22 165.1 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "ced9f695-fb38-4f80-aa21-3a06b99e407f") (property "Reference" "TP6" (at 365.76 163.83 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "EN" (at 365.76 166.37 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 363.22 165.1 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 363.22 165.1 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 363.22 165.1 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "f542d2fb-ae00-4895-82dd-1ea5f23797e7")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "TP6") (unit 1)))))
+(symbol (lib_id "Connector:TestPoint") (at 375.92 165.1 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "9aea9d7e-2f0d-409f-9c02-c429aec879cb") (property "Reference" "TP7" (at 378.46 163.83 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "GND" (at 378.46 166.37 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 375.92 165.1 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 375.92 165.1 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 375.92 165.1 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "07e29840-6660-4e2f-8f96-23d03586bb96")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "TP7") (unit 1)))))
+(symbol (lib_id "power:GND") (at 375.92 165.1 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "c7b86282-c1de-4a7d-bd44-2e46a362b062") (property "Reference" "#PWR052" (at 375.92 165.1 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 375.92 170.18 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 375.92 165.1 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 375.92 165.1 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 375.92 165.1 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "98afd9cb-262e-4d31-b80f-b7fbd441641a")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR052") (unit 1)))))
+(symbol (lib_id "Connector:TestPoint") (at 388.62 165.1 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "82842634-9e63-460d-98db-7e43a2fe8134") (property "Reference" "TP8" (at 391.16 163.83 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "GND" (at 391.16 166.37 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 388.62 165.1 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 388.62 165.1 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 388.62 165.1 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "1714b494-4500-454e-a1c1-ca1de45eebe8")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "TP8") (unit 1)))))
+(symbol (lib_id "power:GND") (at 388.62 165.1 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "94666b30-db31-4cf6-ace8-9cb63753ff49") (property "Reference" "#PWR053" (at 388.62 165.1 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 388.62 170.18 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 388.62 165.1 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 388.62 165.1 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 388.62 165.1 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "0455b615-54f1-4c11-850b-45e3e6be7a8e")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR053") (unit 1)))))
+(symbol (lib_id "Device:C") (at 299.72 200.66 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "681e0e4d-e4bc-4f67-9ee2-8dd7b352f935") (property "Reference" "C10" (at 302.26 199.39 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "100n" (at 302.26 201.93 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 299.72 200.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 299.72 200.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 299.72 200.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "0603 X7R" (at 299.72 200.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "6a55f953-2713-4144-bfbb-ea54ac564dcf")) (pin "2" (uuid "59ad451d-66eb-4135-afe1-49a4c5c2adf9")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "C10") (unit 1)))))
+(symbol (lib_id "power:+3V3") (at 299.72 196.85 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "88dd6f67-220f-41ec-884a-476237b20a74") (property "Reference" "#PWR054" (at 299.72 196.85 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "+3V3" (at 299.72 193.04 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 299.72 196.85 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 299.72 196.85 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 299.72 196.85 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "309720ff-3289-4113-8bd2-09ec908263ec")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR054") (unit 1)))))
+(symbol (lib_id "power:GND") (at 299.72 204.47 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "5d837f3b-06ac-46e6-89d0-bc707a6faf93") (property "Reference" "#PWR055" (at 299.72 204.47 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 299.72 209.55 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 299.72 204.47 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 299.72 204.47 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 299.72 204.47 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "ceb9c461-e165-43d9-acbb-363a5495327a")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR055") (unit 1)))))
+(symbol (lib_id "Device:C") (at 312.42 200.66 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "f7f5db5c-9d01-4399-880a-e2d52b090be4") (property "Reference" "C11" (at 314.96 199.39 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "100n" (at 314.96 201.93 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 312.42 200.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 312.42 200.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 312.42 200.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "0603 X7R" (at 312.42 200.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "e4d2a32d-4a82-451d-bc32-5df4e01ec4b4")) (pin "2" (uuid "2afad7ce-2149-407a-9b5a-e254b5ed431d")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "C11") (unit 1)))))
+(symbol (lib_id "power:+3V3") (at 312.42 196.85 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "ea60a514-c4bf-44ee-9430-d0e3c5b4c306") (property "Reference" "#PWR056" (at 312.42 196.85 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "+3V3" (at 312.42 193.04 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 312.42 196.85 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 312.42 196.85 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 312.42 196.85 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "7f0dfe03-2fc6-4e65-91f7-6e7a7f2c0384")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR056") (unit 1)))))
+(symbol (lib_id "power:GND") (at 312.42 204.47 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "8d4a7927-d98b-43e8-abe6-05d465463167") (property "Reference" "#PWR057" (at 312.42 204.47 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 312.42 209.55 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 312.42 204.47 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 312.42 204.47 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 312.42 204.47 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "259e3c92-a21a-4ae8-bb3f-6dd8cd728ce7")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR057") (unit 1)))))
+(symbol (lib_id "Device:C") (at 325.12 200.66 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "ca226f6e-0bb8-4d87-a017-afd611fcf1b9") (property "Reference" "C12" (at 327.66 199.39 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "100n" (at 327.66 201.93 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 325.12 200.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 325.12 200.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 325.12 200.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "0603 X7R" (at 325.12 200.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "20404778-13a5-4ce0-89dc-067ddf128ded")) (pin "2" (uuid "0ed112ad-19f6-4b3a-a53d-8a18ee486fdd")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "C12") (unit 1)))))
+(symbol (lib_id "power:+3V3") (at 325.12 196.85 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "a4dad1c5-0429-43f5-8f01-ea451f53fb93") (property "Reference" "#PWR058" (at 325.12 196.85 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "+3V3" (at 325.12 193.04 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 325.12 196.85 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 325.12 196.85 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 325.12 196.85 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "816305dd-6beb-462d-83d0-489b24344c9d")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR058") (unit 1)))))
+(symbol (lib_id "power:GND") (at 325.12 204.47 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "06bc1e04-0f02-43a6-a72b-bb8d9d3914b3") (property "Reference" "#PWR059" (at 325.12 204.47 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 325.12 209.55 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 325.12 204.47 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 325.12 204.47 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 325.12 204.47 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "36c04f13-56ff-4c79-ac0b-f4fc1860d070")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR059") (unit 1)))))
+(symbol (lib_id "Device:C") (at 337.82 200.66 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "81660beb-aad1-43ef-bb3e-57c98e40b048") (property "Reference" "C13" (at 340.36 199.39 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "100n" (at 340.36 201.93 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 337.82 200.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 337.82 200.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 337.82 200.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "0603 X7R" (at 337.82 200.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "bb16d6ea-0a04-4001-b1fd-5fea595fd316")) (pin "2" (uuid "18ce0990-4eae-4bca-9a06-6afa9544fceb")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "C13") (unit 1)))))
+(symbol (lib_id "power:+3V3") (at 337.82 196.85 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "4fec2978-93f1-4d23-9d87-2955c3765dfd") (property "Reference" "#PWR060" (at 337.82 196.85 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "+3V3" (at 337.82 193.04 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 337.82 196.85 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 337.82 196.85 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 337.82 196.85 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "5fa6709b-ad9b-4c88-98d2-288976331bae")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR060") (unit 1)))))
+(symbol (lib_id "power:GND") (at 337.82 204.47 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "9fccb473-a0fd-4399-a8c9-13852cac9704") (property "Reference" "#PWR061" (at 337.82 204.47 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 337.82 209.55 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 337.82 204.47 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 337.82 204.47 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 337.82 204.47 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "95f5bfae-7b44-4f43-8c7c-89715d8a0a97")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR061") (unit 1)))))
+(symbol (lib_id "Device:C") (at 350.52 200.66 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "eeb63556-00eb-42d2-9132-752b638c3cc0") (property "Reference" "C14" (at 353.06 199.39 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "100n" (at 353.06 201.93 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 350.52 200.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 350.52 200.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 350.52 200.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "0603 X7R" (at 350.52 200.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "e5dd326f-0526-4091-9d4b-c6fa209be41a")) (pin "2" (uuid "6f717498-790b-437d-8016-9823542b3890")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "C14") (unit 1)))))
+(symbol (lib_id "power:+3V3") (at 350.52 196.85 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "bc317fa9-dcda-4cc3-a56e-84fed7abf5e7") (property "Reference" "#PWR062" (at 350.52 196.85 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "+3V3" (at 350.52 193.04 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 350.52 196.85 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 350.52 196.85 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 350.52 196.85 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "5eee1050-9702-4dc2-8924-72a311a7cfeb")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR062") (unit 1)))))
+(symbol (lib_id "power:GND") (at 350.52 204.47 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "b131e440-94a5-4b0a-98ec-d16711d26982") (property "Reference" "#PWR063" (at 350.52 204.47 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 350.52 209.55 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 350.52 204.47 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 350.52 204.47 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 350.52 204.47 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "03e72080-59e3-4727-b7db-b1238d46ecc7")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR063") (unit 1)))))
+(symbol (lib_id "Device:C") (at 363.22 200.66 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "1ff6efdb-7324-4149-aabf-b7fcfe746451") (property "Reference" "C15" (at 365.76 199.39 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "100n" (at 365.76 201.93 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 363.22 200.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 363.22 200.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 363.22 200.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "0603 X7R" (at 363.22 200.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "ef0b5dad-0e16-46f3-8011-ea3814d8acd0")) (pin "2" (uuid "303efd49-9eff-4733-90b4-e1129f7e81bb")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "C15") (unit 1)))))
+(symbol (lib_id "power:+3V3") (at 363.22 196.85 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "02971abc-c496-40ed-b3af-8ac7c5328b45") (property "Reference" "#PWR064" (at 363.22 196.85 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "+3V3" (at 363.22 193.04 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 363.22 196.85 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 363.22 196.85 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 363.22 196.85 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "918ea89b-7eef-4da7-ba35-c8c4fa22db10")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR064") (unit 1)))))
+(symbol (lib_id "power:GND") (at 363.22 204.47 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "c88b0d3e-02a5-42f7-81d9-735ba7c17aa2") (property "Reference" "#PWR065" (at 363.22 204.47 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 363.22 209.55 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 363.22 204.47 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 363.22 204.47 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 363.22 204.47 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "3a3e65f9-094d-4fb0-9abe-73606f4314f3")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR065") (unit 1)))))
+(symbol (lib_id "Device:C") (at 375.92 200.66 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "79327077-6509-4881-8876-3aff42fe0203") (property "Reference" "C16" (at 378.46 199.39 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "100n" (at 378.46 201.93 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 375.92 200.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 375.92 200.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 375.92 200.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "0603 X7R" (at 375.92 200.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "f2e9a67f-d374-4390-97f5-9387bad77a3a")) (pin "2" (uuid "20b1d4db-b121-4cdd-b19d-1cddaadd07e8")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "C16") (unit 1)))))
+(symbol (lib_id "power:+3V3") (at 375.92 196.85 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "dd167589-9eee-4eee-b051-680738ca38ea") (property "Reference" "#PWR066" (at 375.92 196.85 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "+3V3" (at 375.92 193.04 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 375.92 196.85 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 375.92 196.85 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 375.92 196.85 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "c101ee94-a333-47cb-b4b8-5f4f64bde236")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR066") (unit 1)))))
+(symbol (lib_id "power:GND") (at 375.92 204.47 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "120f71ed-baec-4608-bd5b-63764d4b3cc7") (property "Reference" "#PWR067" (at 375.92 204.47 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 375.92 209.55 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 375.92 204.47 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 375.92 204.47 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 375.92 204.47 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "db2bb0c2-d5f4-4784-aaf1-268aa350d8c4")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR067") (unit 1)))))
+(symbol (lib_id "Device:C") (at 388.62 200.66 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "6876d0be-c07f-46ae-8441-f1ac414d7e64") (property "Reference" "C17" (at 391.16 199.39 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "100n" (at 391.16 201.93 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 388.62 200.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 388.62 200.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 388.62 200.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "0603 X7R" (at 388.62 200.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "61542c09-116e-47ce-99dd-601d30e874a2")) (pin "2" (uuid "dc6e61d7-a851-4710-aca7-60ef0ae685bb")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "C17") (unit 1)))))
+(symbol (lib_id "power:+3V3") (at 388.62 196.85 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "669303e0-e464-4d79-9ff5-13339ea5efb2") (property "Reference" "#PWR068" (at 388.62 196.85 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "+3V3" (at 388.62 193.04 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 388.62 196.85 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 388.62 196.85 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 388.62 196.85 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "7e534704-13fb-4886-8fdd-3637ad31fce5")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR068") (unit 1)))))
+(symbol (lib_id "power:GND") (at 388.62 204.47 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "9732c30d-3479-4373-80d8-653466b6e843") (property "Reference" "#PWR069" (at 388.62 204.47 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 388.62 209.55 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 388.62 204.47 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 388.62 204.47 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 388.62 204.47 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "6ada9972-988b-48f5-9012-94c0f8f2acd8")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR069") (unit 1)))))
+(symbol (lib_id "Device:C") (at 401.32 200.66 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "97510991-8b42-4374-bb87-bc5d7214f9b1") (property "Reference" "C18" (at 403.86 199.39 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "100n" (at 403.86 201.93 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 401.32 200.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 401.32 200.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 401.32 200.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "0603 X7R" (at 401.32 200.66 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "1a1ee610-1669-4839-adcc-9f65291e38ca")) (pin "2" (uuid "55842572-0d2f-474e-b8c0-27feae63d8b5")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "C18") (unit 1)))))
+(symbol (lib_id "power:+3V3") (at 401.32 196.85 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "3b71b717-d8be-48d8-9e1c-e30ba4cfeb37") (property "Reference" "#PWR070" (at 401.32 196.85 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "+3V3" (at 401.32 193.04 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 401.32 196.85 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 401.32 196.85 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 401.32 196.85 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "1f4104ac-9fd7-46c2-bc81-3d9abb2ab4f5")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR070") (unit 1)))))
+(symbol (lib_id "power:GND") (at 401.32 204.47 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "a40e86a5-7593-4b1d-9e35-8b1832a0e2df") (property "Reference" "#PWR071" (at 401.32 204.47 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 401.32 209.55 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 401.32 204.47 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 401.32 204.47 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 401.32 204.47 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "07e75492-cfbd-4cd9-8443-5eb65a8237e3")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR071") (unit 1)))))
+(symbol (lib_id "Device:C") (at 299.72 228.6 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "02916c72-4ab8-4a45-b38f-88f4ed076322") (property "Reference" "C19" (at 302.26 227.33 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "100n" (at 302.26 229.87 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 299.72 228.6 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 299.72 228.6 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 299.72 228.6 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "0603 X7R" (at 299.72 228.6 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "ac6054fa-d9d2-42e0-9a06-04f6b6218f06")) (pin "2" (uuid "802a35f0-cc98-4edc-9752-01a03a0ec43e")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "C19") (unit 1)))))
+(symbol (lib_id "power:+3V3") (at 299.72 224.79 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "1837573a-3eee-4b37-9556-30f5c5cf5cf9") (property "Reference" "#PWR072" (at 299.72 224.79 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "+3V3" (at 299.72 220.98 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 299.72 224.79 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 299.72 224.79 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 299.72 224.79 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "3674a79c-941a-4539-9b59-7f83af34f579")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR072") (unit 1)))))
+(symbol (lib_id "power:GND") (at 299.72 232.41 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "927cc746-677f-48a0-8206-7f73917b7e2e") (property "Reference" "#PWR073" (at 299.72 232.41 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 299.72 237.49 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 299.72 232.41 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 299.72 232.41 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 299.72 232.41 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "e18c7611-9ac4-4d06-9429-9ca8aa1f9e39")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR073") (unit 1)))))
+(symbol (lib_id "Device:C") (at 312.42 228.6 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "01927fb1-6eaf-4c18-bf09-176c0867ad3e") (property "Reference" "C20" (at 314.96 227.33 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "100n" (at 314.96 229.87 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 312.42 228.6 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 312.42 228.6 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 312.42 228.6 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "0603 X7R" (at 312.42 228.6 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "71b24f69-7986-4841-a0ba-7732e66537c3")) (pin "2" (uuid "851ca28f-c713-43ef-adce-bcbab7f510f1")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "C20") (unit 1)))))
+(symbol (lib_id "power:+3V3") (at 312.42 224.79 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "0b507267-815e-4f02-9ea8-66a4475c362a") (property "Reference" "#PWR074" (at 312.42 224.79 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "+3V3" (at 312.42 220.98 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 312.42 224.79 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 312.42 224.79 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 312.42 224.79 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "0b05c0b2-60d8-4577-bd32-28831170bc52")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR074") (unit 1)))))
+(symbol (lib_id "power:GND") (at 312.42 232.41 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "5fbdaa88-f05f-4794-87ee-708cde8af950") (property "Reference" "#PWR075" (at 312.42 232.41 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 312.42 237.49 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 312.42 232.41 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 312.42 232.41 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 312.42 232.41 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "e2bbdc2c-617b-4841-acdf-c59fa156367b")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR075") (unit 1)))))
+(symbol (lib_id "Device:C") (at 325.12 228.6 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "a2fedf51-c89f-4ef2-8728-8ef3177a8464") (property "Reference" "C21" (at 327.66 227.33 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "100n" (at 327.66 229.87 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 325.12 228.6 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 325.12 228.6 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 325.12 228.6 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "0603 X7R" (at 325.12 228.6 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "12d9bbe7-c33c-4785-9dd8-2dab33c079f0")) (pin "2" (uuid "e7b8db05-09b6-4afc-97ea-84f7684aaabd")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "C21") (unit 1)))))
+(symbol (lib_id "power:+3V3") (at 325.12 224.79 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "313db14a-1a44-4f42-a899-c5469961919f") (property "Reference" "#PWR076" (at 325.12 224.79 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "+3V3" (at 325.12 220.98 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 325.12 224.79 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 325.12 224.79 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 325.12 224.79 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "29a91c49-566c-4f21-8267-aedd47388bb8")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR076") (unit 1)))))
+(symbol (lib_id "power:GND") (at 325.12 232.41 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "27b6a6ab-e092-4f1f-9928-f4427a3dacb1") (property "Reference" "#PWR077" (at 325.12 232.41 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 325.12 237.49 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 325.12 232.41 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 325.12 232.41 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 325.12 232.41 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "8e50f393-a466-409b-b349-c486da0b2abf")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR077") (unit 1)))))
+(symbol (lib_id "Device:C") (at 345.44 228.6 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "b022991c-94cb-4fdf-be99-55c13d75dcd3") (property "Reference" "C22" (at 347.98 227.33 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "10u X7R 10V" (at 347.98 229.87 0) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 345.44 228.6 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 345.44 228.6 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 345.44 228.6 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Package" "0805" (at 345.44 228.6 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "e9cfbc2d-fc55-42f2-b34e-8189c1544a8c")) (pin "2" (uuid "6cf5ac45-6e30-46c0-99eb-6c2b076c8122")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "C22") (unit 1)))))
+(symbol (lib_id "power:+3V3") (at 345.44 224.79 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "c21c163b-e275-4b99-9ac3-b2b3417ec27a") (property "Reference" "#PWR078" (at 345.44 224.79 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "+3V3" (at 345.44 220.98 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 345.44 224.79 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 345.44 224.79 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 345.44 224.79 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "461c5800-b5d3-4e79-8fb6-d151de3aff70")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR078") (unit 1)))))
+(symbol (lib_id "power:GND") (at 345.44 232.41 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "72adabcc-c682-4dff-9438-34c946987a34") (property "Reference" "#PWR079" (at 345.44 232.41 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 345.44 237.49 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 345.44 232.41 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 345.44 232.41 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 345.44 232.41 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "ab7e4ac5-4749-4a19-90fb-4c91edb7ed6b")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR079") (unit 1)))))
+(symbol (lib_id "power:PWR_FLAG") (at 365.76 228.6 180) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "d8d93b8b-56e3-4c60-94d6-213e2ffa1eff") (property "Reference" "#FLG80" (at 365.76 228.6 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "PWR_FLAG" (at 365.76 233.68 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 365.76 228.6 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 365.76 228.6 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 365.76 228.6 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "0fa4416d-f045-436c-84dc-31446f1a512e")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#FLG80") (unit 1)))))
+(symbol (lib_id "power:+3V3") (at 365.76 228.6 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "a7e131ea-0e87-45e4-943f-0f325fb74d94") (property "Reference" "#PWR081" (at 365.76 228.6 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "+3V3" (at 365.76 224.79 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 365.76 228.6 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 365.76 228.6 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 365.76 228.6 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "bd58da2e-a346-41c0-bcad-0e5890bfa62f")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR081") (unit 1)))))
+(symbol (lib_id "power:PWR_FLAG") (at 381 228.6 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "fc2a0c25-6c54-45e8-8aa4-f30b7f9cb901") (property "Reference" "#FLG82" (at 381 228.6 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "PWR_FLAG" (at 381 224.79 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 381 228.6 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 381 228.6 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 381 228.6 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "7cad236a-084b-4737-803d-4b1c4b5720d5")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#FLG82") (unit 1)))))
+(symbol (lib_id "power:GND") (at 381 228.6 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid "605d10d3-d341-4698-bc98-d95f15f21066") (property "Reference" "#PWR083" (at 381 228.6 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Value" "GND" (at 381 233.68 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 381 228.6 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Datasheet" "" (at 381 228.6 0) (effects (font (size 1.27 1.27)) (hide yes))) (property "Description" "" (at 381 228.6 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "6d3bb680-8921-4984-baec-d7e6285c4f49")) (instances (project "Devastator_StopArm_v0_1" (path "/14f4ee1b-e37a-4eab-b453-f53c052d8f48" (reference "#PWR083") (unit 1)))))
+(sheet_instances (path "/" (page "1")))
+(embedded_fonts no))
