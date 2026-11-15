@@ -95,7 +95,7 @@ g++ -std=c++11 -Wall -Wextra -Werror -Iinclude tests/test_orientation.cpp -o /tm
 
 The C++ command is for a Linux/macOS shell with a compiler. On Windows you can use
 WSL or another C++ toolchain; PlatformIO firmware builds work directly in VS Code.
-GitHub Actions runs both firmware environments and the host checks.
+GitHub Actions runs all three firmware environments and the host checks.
 
 Build success proves compilation, not wiring, axis alignment, timing or hardware
 operation. Initial validation results are recorded in [docs/validation.md](docs/validation.md).
